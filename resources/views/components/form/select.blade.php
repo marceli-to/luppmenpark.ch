@@ -1,5 +1,4 @@
 <select 
-  data-filter-type="state" 
-  {{ $attributes->merge(['class' => 'w-full relative bg-olive bg-[url("../icons/chevron-down.svg")] bg-[length:15px_auto] font-barlow-bold text-base lg:text-md xl:text-lg border-0 focus:ring-0 text-white appearance-none accent-serene']) }}>
+  {{ $attributes->merge(['class' => 'w-full relative rounded-sm px-10 py-10 bg-white bg-[url("../icons/chevron-down.svg")] bg-[length:15px_auto] font-barlow-medium border-0 focus:ring-0 text-charcoal appearance-none accent-sandstone']) }}>
   {{ $slot }}
 </select>

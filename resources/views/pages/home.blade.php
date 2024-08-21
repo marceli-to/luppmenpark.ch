@@ -27,8 +27,19 @@
 </x-layout.section>
 <x-layout.section class="bg-ivory">
   <x-layout.inner>
-    <h1 class="text-charcoal">Kontaktformular</h1>
-    @livewire('contact-general')
+    <div class="max-w-3xl">
+      <h1 class="text-charcoal">Kontaktformular</h1>
+      <x-layout.span class="relative sm:col-span-full">
+        <x-form.select name="form_type" class="w-full">
+          <option value="general" selected>Allgemein</option>
+          <option value="member">Mitglied</option>
+          <option value="investor">Investor</option>
+        </x-form.select>
+      </x-layout.span>
+
+
+      @livewire('contact-general')
+    </div>
   </x-layout.inner>
 </x-layout.section>
 @endsection

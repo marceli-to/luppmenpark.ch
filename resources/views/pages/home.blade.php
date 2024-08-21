@@ -27,18 +27,24 @@
 </x-layout.section>
 <x-layout.section class="bg-ivory">
   <x-layout.inner>
-    <div class="max-w-3xl">
+    <div x-data="{ selectedForm: 'general' }" class="max-w-3xl">
       <h1 class="text-charcoal">Kontaktformular</h1>
       <x-layout.span class="relative sm:col-span-full">
-        <x-form.select name="form_type" class="w-full">
-          <option value="general" selected>Allgemein</option>
+        <x-form.select name="form_type" class="w-full" x-model="selectedForm">
+          <option value="general">Allgemein</option>
           <option value="member">Mitglied</option>
           <option value="investor">Investor</option>
         </x-form.select>
       </x-layout.span>
-
-
-      @livewire('contact-general')
+      <div x-show="selectedForm === 'general'">
+        @livewire('contact-general')
+      </div>
+      <div x-show="selectedForm === 'member'">
+        @livewire('contact-member')
+      </div>
+      <div x-show="selectedForm === 'investor'">
+        @livewire('contact-investor')
+      </div>
     </div>
   </x-layout.inner>
 </x-layout.section>

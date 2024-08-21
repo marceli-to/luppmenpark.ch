@@ -16,11 +16,11 @@
   </div>
   <div class="text-base pb-base">
     <strong>Adresse</strong><br>
-    {{ $data->address }}
+    {{ $data->address ?? '–' }}
   </div>
   <div class="text-base pb-base">
     <strong>PLZ/Ort</strong><br>
-    {{ $data->location }}
+    {{ $data->location ?? '–' }}
   </div>
   <div class="text-base pb-base">
     <strong>E-Mail</strong><br>
@@ -28,7 +28,11 @@
   </div>
   <div class="text-base pb-base">
     <strong>Telefon</strong><br>
-    {{ $data->phone }}
+    {{ $data->phone ?? '–' }}
+  </div>
+  <div class="text-base pb-base">
+    <strong>Geburtsdatum</strong><br>
+    {{ $data->date_of_birth ? $data->date_of_birth->format('d.m.Y') : '–' }}
   </div>
   <div class="text-base pb-base">
     <strong>Nachricht</strong><br>

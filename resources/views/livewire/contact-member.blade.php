@@ -5,7 +5,7 @@
 
   <x-layout.grid class="sm:gap-y-15 lg:gap-x-25 lg:gap-y-20">
     <x-honeypot />
-    <input type="hidden" wire:model="request_type" value="general" />
+    <input type="hidden" wire:model="request_type" value="member" />
     <x-layout.span class="relative sm:col-span-full">
       <x-form.input name="firstname" placeholder="Vorname*" isWire="true" />
       @error('firstname')
@@ -19,19 +19,19 @@
       @enderror 
     </x-layout.span>
     <x-layout.span class="relative sm:col-span-full">
-      <x-form.input name="address" placeholder="Adresse" isWire="true" />
+      <x-form.input name="address" placeholder="Adresse*" isWire="true" />
       @error('address')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
     <x-layout.span class="relative sm:col-span-full">
-      <x-form.input name="location" placeholder="PLZ/Ort" isWire="true" />
+      <x-form.input name="location" placeholder="PLZ/Ort*" isWire="true" />
       @error('location')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
     <x-layout.span class="relative sm:col-span-full">
-      <x-form.input name="date_of_birth" type="date" placeholder="Geburtsdatum" isWire="true" />
+      <x-form.input name="date_of_birth" type="date" placeholder="Geburtsdatum*" isWire="true" />
       @error('date_of_birth')
         <x-form.error message="{{ $date_of_birth }}" />
       @enderror 
@@ -43,7 +43,7 @@
       @enderror 
     </x-layout.span>
     <x-layout.span class="relative sm:col-span-full">
-      <x-form.input name="phone" placeholder="Telefon" isWire="true" />
+      <x-form.input name="phone" placeholder="Telefon*" isWire="true" />
       @error('phone')
         <x-form.error message="{{ $message }}" />
       @enderror 
@@ -62,8 +62,8 @@
           />
       @enderror
       <div class="flex items-start">
-        <x-form.checkbox name="privacy" id="privacy_general" isWire="true" class="mt-2 lg:mt-6" />
-        <x-form.checkbox-label for="privacy_general" class="ml-6 lg:!ml-10">
+        <x-form.checkbox name="privacy" id="privacy_member" isWire="true" class="mt-2 lg:mt-6" />
+        <x-form.checkbox-label for="privacy_member" class="ml-6 lg:!ml-10">
           Ich habe die <a href="{{ route('page.privacy') }}" title="Datenschutzerklärung" target="_blank" class="hover:underline underline-offset-2 decoration-1">Datenschutzerklärung</a> gelesen und akzeptiere diese
         </x-form.checkbox-label>
       </div>

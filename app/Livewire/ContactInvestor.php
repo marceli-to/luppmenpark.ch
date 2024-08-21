@@ -8,9 +8,9 @@ use App\Notifications\ContactUserEmail;
 use Carbon\Carbon;
 use Carbon\Exceptions\InvalidFormatException;
 
-class ContactGeneral extends Component
+class ContactInvestor extends Component
 {
-  public $request_type = 'general';
+  public $request_type = 'investor';
 
   #[Rule('required')]
   public $firstname;
@@ -18,13 +18,16 @@ class ContactGeneral extends Component
   #[Rule('required')]
   public $name;
 
+  #[Rule('required')]
   public $address;
 
+  #[Rule('required')]
   public $location;
 
   #[Rule('required', 'email')]
   public $email;
 
+  #[Rule('required')]
   public $phone;
 
   public $date_of_birth;
@@ -63,7 +66,7 @@ class ContactGeneral extends Component
 
   public function render()
   {
-    return view('livewire.contact-general');
+    return view('livewire.contact-investor');
   }
 
   private function validateAndFormatDate($date)

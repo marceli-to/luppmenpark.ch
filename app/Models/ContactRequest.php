@@ -15,4 +15,8 @@ class ContactRequest extends Model
     'date_of_birth',
     'message'
   ];
+
+  protected $casts = [
+    'date_of_birth'  => 'date:d.m.Y',
+  ];
 }

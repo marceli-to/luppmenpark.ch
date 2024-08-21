@@ -5,7 +5,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class ContactGeneralUserEmail extends Notification
+class ContactUserEmail extends Notification
 {
   use Queueable;
 
@@ -41,8 +41,8 @@ class ContactGeneralUserEmail extends Notification
     return (new MailMessage)
       ->from(env('MAIL_FROM_ADDRESS'))
       ->replyTo(env('MAIL_TO'))
-      ->subject('luppmenpark.ch – Anfrage Allgemein')
-      ->markdown('mail.contact-general-user', ['data' => $this->data]);
+      ->subject('luppmenpark.ch – Anfrage')
+      ->markdown('mail.contact-user', ['data' => $this->data]);
   }
 
   /**

@@ -1,7 +1,7 @@
 <form wire:submit="save" class="mt-16 lg:mt-24">
   @if (session()->has('status'))
     <div x-data="{ open: true }" x-show="open">
-      <div class="bg-green-600 rounded-sm text-white font-poppins-medium font-medium py-15 pl-15 pr-30 fixed top-10 left-10 inline-block w-auto z-[101]">
+      <div class="bg-green-600 rounded-sm text-white font-barlow-medium font-medium py-15 pl-15 pr-30 fixed top-10 left-10 inline-block w-auto z-[101]">
         <div class="relative">
           <a href="javascript:;" x-on:click="open = false">
             Vielen Dank, wir haben Ihre Anfrage erhalten.
@@ -12,74 +12,52 @@
     </div>
   @endif
 
-  <div class="mt-25 mb-15 lg:mb-20">
-    <h2 class="text-teal">ICH INTERESSIERE MICH FÜR (BITTE AUSWÄHLEN):</h2>
-  </div>
-  <x-layout.grid class="sm:gap-y-15 lg:gap-x-25 lg:gap-y-20">
+  <x-layout.grid class="sm:gap-y-15 lg:gap-x-25 lg:gap-y-20 max-w-3xl">
     <x-honeypot />
-    <x-layout.span class="relative !col-span-12 !mb-20 md:!mb-10">
-      @error('interest')
-        <x-form.error 
-          message="mind. 1 Option auswählen"
-          class="relative right-auto left-0 h-24 mb-5 top-2"
-          />
-      @enderror
-      <div class="flex flex-col md:flex-row md:gap-x-40">
-        <div class="mb-5 md:mb-0">
-          <div>
-            <x-form.checkbox name="interest" value="2.5-Zimmerwohnung" isWire="true" class="-mt-4" id="interest-2.5zi" />
-            <x-form.checkbox-label for="interest-2.5zi">2.5-Zimmerwohnung</x-form.checkbox-label>
-          </div>
-          <div>
-            <x-form.checkbox name="interest" value="3.5-Zimmerwohnung" isWire="true" class="-mt-4" id="interest-3.5zi" />
-            <x-form.checkbox-label for="interest-3.5zi">3.5-Zimmerwohnung</x-form.checkbox-label>
-          </div>
-        </div>
-        <div>
-          <div>
-            <x-form.checkbox name="interest" value="4.5-Zimmerwohnung" isWire="true" class="-mt-4" id="interest-4.5zi" />
-            <x-form.checkbox-label for="interest-4.5zi">4.5-Zimmerwohnung</x-form.checkbox-label>
-          </div>
-        </div>
-      </div>
-    </x-layout.span>
-    <x-layout.span class="relative">
+    <input type="hidden" wire:model="request_type" value="general" />
+    <x-layout.span class="relative sm:col-span-full">
       <x-form.input name="firstname" placeholder="Vorname*" isWire="true" />
       @error('firstname')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
-    <x-layout.span class="relative">
+    <x-layout.span class="relative sm:col-span-full">
       <x-form.input name="name" placeholder="Name*" isWire="true" />
       @error('name')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
-    <x-layout.span class="relative">
-      <x-form.input name="street" placeholder="Strasse/Nr.*" isWire="true" />
-      @error('street')
+    <x-layout.span class="relative sm:col-span-full">
+      <x-form.input name="address" placeholder="Adresse" isWire="true" />
+      @error('address')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
-    <x-layout.span class="relative">
-      <x-form.input name="location" placeholder="PLZ/Ort*" isWire="true" />
+    <x-layout.span class="relative sm:col-span-full">
+      <x-form.input name="location" placeholder="PLZ/Ort" isWire="true" />
       @error('location')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
-    <x-layout.span class="relative">
+    <x-layout.span class="relative sm:col-span-full">
       <x-form.input name="email" type="email" placeholder="E-Mail*" isWire="true" />
       @error('email')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
-    <x-layout.span class="relative">
+    <x-layout.span class="relative sm:col-span-full">
       <x-form.input name="phone" placeholder="Telefon" isWire="true" />
       @error('phone')
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
-    <x-layout.span class="relative sm:!col-span-12">
+    <x-layout.span class="relative sm:col-span-full">
+      <x-form.textarea name="message" placeholder="Nachricht*" isWire="true" />
+      @error('message')
+        <x-form.error message="{{ $message }}" />
+      @enderror 
+    </x-layout.span>
+    <x-layout.span class="relative sm:col-span-full">
       @error('privacy')
         <x-form.error 
           message="Datenschutzerklärung muss akzeptiert werden"
@@ -93,7 +71,7 @@
         </x-form.checkbox-label>
       </div>
     </x-layout.span>
-    <x-layout.span class="sm:col-span-12 mt-5">
+    <x-layout.span class="sm:col-span-full mt-5">
       <x-form.button>
         <div wire:loading>
           <x-form.spinner class="mr-12" />

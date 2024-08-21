@@ -2,16 +2,17 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-class Inquiry extends Model
+class ContactRequest extends Model
 {
   protected $fillable = [
+    'request_type',
     'firstname',
     'name',
-    'street',
+    'address',
     'location',
     'email',
     'phone',
-    'message',
-    'interest'
+    'date_of_birth',
+    'message'
   ];
 }

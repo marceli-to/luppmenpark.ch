@@ -1,5 +1,4 @@
 @import "typo/webfonts.css";
-@import "vendor/mapbox.css";
 @import "vendor/swiper.css";
 @import "vendor/swiper-custom.css";
 
@@ -12,23 +11,19 @@ main {
 }
 
 h1, h2 {
-  @apply uppercase font-poppins-medium font-medium
+  @apply font-barlow-bold
 }
 
 h1 {
-  @apply text-lg md:text-xl lg:text-2xl leading-[1.15] mb-15 lg:mb-30
+  @apply text-lg md:text-xl lg:text-2xl leading-[1.15] uppercase mb-15 lg:mb-30
 }
 
 h2 {
-  @apply text-base md:text-md lg:text-lg
-}
-
-h3 {
-  @apply uppercase font-poppins-medium font-medium mb-2
+  @apply text-base md:text-md xl:text-lg
 }
 
 strong {
-  @apply font-poppins-medium !font-medium
+  @apply font-barlow-bold
 }
 
 .imprint h2,
@@ -48,10 +43,6 @@ p:last-of-type {
   @apply mb-0;
 }
 
-strong {
-  @apply font-poppins-medium font-medium font-normal;
-}
-
 main ul {
   @apply m-0 p-0 mb-16 lg:mb-20;
 }
@@ -67,13 +58,4 @@ main ul li {
 sub,
 sup {
   font-size: 65%;
-}
-
-.marker {
-  background-image: url('../icons/marker.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  height: 50px;
-  width: 40px;
 }

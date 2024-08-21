@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-16c06e03.css",
+    "file": "assets/app-e8b0d82e.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -8,12 +8,8 @@
     "file": "assets/chevron-down-3b95e92a.svg",
     "src": "resources/icons/chevron-down.svg"
   },
-  "resources/icons/marker.svg": {
-    "file": "assets/marker-b8920b83.svg",
-    "src": "resources/icons/marker.svg"
-  },
   "resources/js/app.js": {
-    "file": "assets/app-177564e6.js",
+    "file": "assets/app-0b44288f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

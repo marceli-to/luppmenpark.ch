@@ -17,17 +17,15 @@ export default {
       },
 
       colors: {
-
-        'terracotta': '#d98169',
-        'teal': '#86a5a8',
-        'ivory': '#f0e4d8',
-        'charcoal': '#474747',
-        'stone': '#919191',
+        'ivory': '#f3eade',
+        'sandstone': '#b59971',
+        'charcoal': '#474847',
+        'emerald': '#007a31'
       },
 
       fontFamily: {
-        'poppins-medium': ['Poppins', ...defaultTheme.fontFamily.sans],
-        'poppins-regular': ['Poppins', ...defaultTheme.fontFamily.sans],
+        'barlow-medium': ['barlow-medium', ...defaultTheme.fontFamily.sans],
+        'barlow-bold': ['barlow-bold', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
@@ -35,7 +33,7 @@ export default {
         'sm': '0.875rem', // 14px
         'base': '1rem', // 16px
         'md': '1.125rem', // 18px
-        'lg': '1.5rem', // 24px
+        'lg': '1.25rem', // 20px
         'xl': '2.125rem', // 34px
         '2xl': '2.5rem', // 40px
       },

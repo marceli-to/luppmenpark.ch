@@ -2,23 +2,22 @@
 namespace App\Livewire;
 use Livewire\Attributes\Rule; 
 use Livewire\Component;
-use App\Models\Inquiry;
+use App\Models\ContactRequest;
 use Illuminate\Support\Facades\Notification;
-use App\Notifications\InquiryOwnerEmail;
-use App\Notifications\InquiryUserEmail;
+use App\Notifications\ContactGeneralUserEmail;
 
-class CreateInquiry extends Component
+class ContactGeneral extends Component
 {
+  public $request_type = 'general';
+
   #[Rule('required')]
   public $firstname;
 
   #[Rule('required')]
   public $name;
 
-  #[Rule('required')]
-  public $street;
+  public $address;
 
-  #[Rule('required')]
   public $location;
 
   #[Rule('required', 'email')]
@@ -26,35 +25,32 @@ class CreateInquiry extends Component
 
   public $phone;
 
+  public $date_of_birth;
+
   public $message;
 
   #[Rule('required')]
   public $privacy;
 
-  #[Rule('required|array')]
-  public $interest = [];
-
   public function save()
   {
     $this->validate();
     
-    $inquiry = Inquiry::create(
+    $contact = ContactRequest::create(
       $this->only([
+        'request_type',
         'name', 
         'firstname',
         'email', 
-        'street',
+        'address',
         'location',
         'phone',
+        'date_of_birth',
+        'message',
       ])
     );
 
-    $interest_string = implode(', ', $this->interest);
-    $inquiry->interest = $interest_string;
-    $inquiry->save();
-
-    Notification::route('mail', $inquiry->email)->notify(new InquiryUserEmail($inquiry));
-
+    Notification::route('mail', $contact->email)->notify(new ContactGeneralUserEmail($contact));
     session()->flash('status', 'Inquiry was submitted');
     $this->reset();
     $this->render();
@@ -62,6 +58,6 @@ class CreateInquiry extends Component
 
   public function render()
   {
-    return view('livewire.create-inquiry');
+    return view('livewire.contact-general');
   }
 }

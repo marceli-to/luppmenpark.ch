@@ -1,6 +1,6 @@
 <x-mail::message>
   <div class="text-base pb-base">
-    Sehr geehrte Damen und Herren<br><br>Danke für Ihr Interesse. Gerne kontaktieren wir Sie mit weiteren Informationen, sobald der offizielle Vermarktungsstart erfolgt.
+    Guten Tag<br><br>Vielen Dank für Ihre Anfrage. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.
   </div>
   <br>
   <div class="text-base pb-base">
@@ -15,8 +15,8 @@
     {{ $data->name }}
   </div>
   <div class="text-base pb-base">
-    <strong>Strasse/Nr.</strong><br>
-    {{ $data->street }}
+    <strong>Adresse</strong><br>
+    {{ $data->address }}
   </div>
   <div class="text-base pb-base">
     <strong>PLZ/Ort</strong><br>
@@ -31,7 +31,7 @@
     {{ $data->phone }}
   </div>
   <div class="text-base pb-base">
-    <strong>Wohnung</strong><br>
-    {{ $data->interest }}
+    <strong>Nachricht</strong><br>
+    {{ $data->message }}
   </div>
 </x-mail::message>

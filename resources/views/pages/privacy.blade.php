@@ -40,7 +40,7 @@
     <p>Für die Verarbeitung der Daten wird im Rahmen des Absendevorgangs Ihre Einwilligung eingeholt und auf diese Datenschutzerklärung verwiesen.</p>
     <p>Die Verarbeitung der personenbezogenen Daten aus der Eingabemaske dient uns allein zur Bearbeitung der Kontaktaufnahme. Die sonstigen während des Absendevorgangs verarbeiteten personenbezogenen Daten dienen dazu, einen Missbrauch des Kontaktformulars zu verhindern und die Sicherheit unserer informationstechnischen Systeme sicherzustellen.</p>
     <strong>Dauer der Speicherung und Widerspruchsrecht</strong><br>
-    <p>Sie haben jederzeit die Möglichkeit, Ihre Einwilligung zur Verarbeitung der personenbezogenen Daten per E-Mail an <a href="mailto:mieten@apleona.ch">mieten@apleona.ch</a> zu widerrufen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.</p>
+    <p>Sie haben jederzeit die Möglichkeit, Ihre Einwilligung zur Verarbeitung der personenbezogenen Daten per E-Mail an <a href="mailto:wohnen@luppmenpark.ch">wohnen@luppmenpark.ch</a> zu widerrufen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.</p>
     <p>Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme gespeichert wurden, werden in diesem Fall gelöscht.</p>
     
     <h2>Google Analytics</h2>
@@ -65,7 +65,7 @@
     <p>Zudem erfolgt die Nutzung von Google Maps sowie der über Google Maps erlangten Informationen nach den Google-Nutzungsbedingungen <a href="http://policies.google.com/terms" target="_blank">policies.google.com/terms</a> und den Geschäftsbedingungen für <a href="http://www.google.com/intl/de_de/help/terms_maps.html" target="_blank">Google Maps</a>.</p>
     
     <h2>Recht auf Auskunft, Löschung, Sperrung</h2>
-    <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden oder eine E-Mail an <a href="mailto:mieten@apleona.ch" target="_blank">mieten@apleona.ch</a> senden.</p>
+    <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden oder eine E-Mail an <a href="mailto:wohnen@luppmenpark.ch" target="_blank">wohnen@luppmenpark.ch</a> senden.</p>
   
     <h2>Verwendung von Adobe Fonts</h2>
     <p>Wir verwenden auf dieser Webseite die Schriftarten von Adobe Fonts, um ein ansprechendes Design und eine bessere Lesbarkeit zu gewährleisten. Adobe Fonts ist ein Dienst der Adobe Systems Software Ireland Limited, 4-6 Riverwalk, Citywest Business Campus, Dublin 24, Irland.</p>

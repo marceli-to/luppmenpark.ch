@@ -24,8 +24,8 @@ export default {
       },
 
       fontFamily: {
-        'barlow-medium': ['barlow-medium', ...defaultTheme.fontFamily.sans],
-        'barlow-bold': ['barlow-bold', ...defaultTheme.fontFamily.sans],
+        'barlow-medium': ['Barlow', ...defaultTheme.fontFamily.sans],
+        'barlow-bold': ['Barlow', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {

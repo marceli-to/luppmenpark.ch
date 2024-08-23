@@ -11,7 +11,7 @@ main {
 }
 
 h1, h2 {
-  @apply font-barlow-bold
+  @apply font-barlow-bold font-bold
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
 }
 
 strong {
-  @apply font-barlow-bold
+  @apply font-barlow-bold font-bold
 }
 
 .imprint h2,

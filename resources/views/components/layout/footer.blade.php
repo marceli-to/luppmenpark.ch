@@ -17,10 +17,10 @@
         </a>
         <br>
         <a 
-          href="mailto:wohnen@luppmenpark.ch" 
+          href="mailto:info@luppmenpark.ch" 
           title="Schreiben Sie uns eine E-Mail"
           class="hover:underline hover:decoration-1 hover:underline-offset-4">
-          wohnen@luppmenpark.ch
+          info@luppmenpark.ch
         </a>
       </div>
     </div>

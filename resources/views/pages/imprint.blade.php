@@ -8,11 +8,11 @@
       Luppmenpark GAL<br>
       8335 Hittnau<br>
       <a 
-        href="mailto:wohnen@luppmenpark.ch" 
+        href="mailto:info@luppmenpark.ch" 
         target="_blank" 
         rel="noopener" 
         class="hover:underline underline-offset-4 decoration-1">
-        wohnen@luppmenpark.ch
+        info@luppmenpark.ch
       </a>
     </p>
     <h2>Design und Entwicklung</h2>

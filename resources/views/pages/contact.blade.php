@@ -5,6 +5,7 @@
 <x-media.picture 
   :image="'luppmenpark-park'" 
   :alt="''"
+  :sizes="['md', 'lg', 'xl']"
   class="md:aspect-[16/9]" />
 <x-layout.section>
   <x-layout.inner>

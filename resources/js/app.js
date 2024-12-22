@@ -1,2 +1,2 @@
 import './bootstrap';
-import './modules/swiper.js';
+import './modules/fancybox.js';

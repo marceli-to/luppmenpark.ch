@@ -31,7 +31,6 @@
             <a 
               href="{{ route('page.imprint') }}" 
               title="Impressum"
-              target="_blank"
               class="hover:underline hover:decoration-1 hover:underline-offset-4">
               Impressum
             </a>
@@ -40,9 +39,17 @@
             <a 
               href="{{ route('page.privacy') }}" 
               title="Datenschutz"
-              target="_blank"
               class="hover:underline hover:decoration-1 hover:underline-offset-4">
               Datenschutz
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://stoz.ch" 
+              title="design by stoz"
+              target="_blank"
+              class="hover:underline hover:decoration-1 hover:underline-offset-4">
+              design by stoz
             </a>
           </li>
         </ul>

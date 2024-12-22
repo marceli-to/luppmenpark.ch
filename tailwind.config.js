@@ -32,10 +32,9 @@ export default {
         'xs': '0.8125rem', // 13px
         'sm': '0.875rem', // 14px
         'base': '1rem', // 16px
-        'md': '1.125rem', // 18px
+        'md': '1.1rem', // 17px
         'lg': '1.25rem', // 20px
-        'xl': '2.125rem', // 34px
-        '2xl': '2.5rem', // 40px
+        'xl': '1.875rem', // 30px
       },
 
     },

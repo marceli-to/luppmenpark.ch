@@ -13,7 +13,10 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::view('/', 'pages.home')->name('page.home');
+Route::view('/', 'pages.project')->name('page.project');
+Route::view('/wir-sind-gal', 'pages.about')->name('page.about');
+Route::view('/investition', 'pages.invest')->name('page.invest');
+Route::view('/kontakt', 'pages.contact')->name('page.contact');
 Route::view('/impressum', 'pages.imprint')->name('page.imprint');
 Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
 

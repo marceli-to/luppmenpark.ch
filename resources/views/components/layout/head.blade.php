@@ -1,14 +1,18 @@
+<?php
+$title = trim($__env->yieldContent('seo_title')) ?? env('APP_NAME');
+$description = trim($__env->yieldContent('seo_description')) ?? env('APP_DESCRIPTION');
+?>
 <!doctype html>
 <html lang="de" class="h-full bg-white scroll-smooth overflow-y-scroll">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ env('APP_NAME') }}</title>
-<meta name="description" content="{{ env('APP_DESCRIPTION') }}">
-<meta property="og:title" content="{{ env('APP_NAME') }}">
-<meta property="og:description" content="{{ env('APP_DESCRIPTION') }}">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ url()->current()}} ">
-<meta property="og:site_name" content="{{ env('APP_NAME') }}">
+<meta property="og:site_name" content="{{ $title }}">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -22,4 +26,4 @@
 @vite('resources/css/app.css')
 @livewireStyles
 </head>
-<body class="antialiased font-barlow-medium font-medium text-charcoal text-base md:text-md xl:text-lg leading-[1.45] flex min-h-full flex-col">
+<body class="antialiased font-barlow-medium font-medium text-charcoal text-base md:text-md leading-[1.45] flex min-h-full flex-col">

@@ -1,10 +1,10 @@
-{{-- <nav x-show="menu" x-cloak class="fixed bg-white w-full left-0 top-70 md:top-0 px-20 pb-20 md:p-0 md:relative md:!block">
-  <ul class="md:flex md:mt-30">
-    <x-menu.item :route="'page.project'" :title="'Projekt'" class="{{ Route::is('page.project') ? 'text-serene' : '' }}" />
-    <x-menu.item :route="'page.living'" :title="'Wohnen'" class="{{ Route::is('page.living') ? 'text-serene' : '' }}" />
-    <x-menu.item :route="'page.business'" :title="'Gewerbe'" class="{{ Route::is('page.business') ? 'text-serene' : '' }}" />
-    <x-menu.item :route="'page.apartments'" :title="'Angebot'" class="{{ Route::is('page.apartments') ? 'text-serene' : '' }}" />
-    <x-menu.item :route="'page.qa'" :title="'Q&A'" class="{{ Route::is('page.qa') ? 'text-serene' : '' }}" />
-    <x-menu.item :route="'page.contact'" :title="'Kontakt'" class="{{ Route::is('page.contact') ? 'text-serene' : '' }}" />
+<nav 
+  x-show="menu" 
+  x-cloak class="bg-ivory fixed left-0 top-100 z-40 md:top-0 w-full p-20 md:p-0 md:relative md:!block">
+  <ul class="flex flex-col gap-y-20 items-center md:flex-row md:justify-center md:gap-30 xl:gap-40 md:mt-40">
+    <x-menu.item :route="'page.project'" :title="'Projekt'" class="{{ Route::is('page.project') ? 'font-barlow-bold font-bold' : '' }}" />
+    <x-menu.item :route="'page.about'" :title="'Wir sind GAL'" class="{{ Route::is('page.about') ? 'font-barlow-bold font-bold' : '' }}" />
+    <x-menu.item :route="'page.invest'" :title="'Investition'" class="{{ Route::is('page.invest') ? 'font-barlow-bold font-bold' : '' }}" />
+    <x-menu.item :route="'page.contact'" :title="'Kontakt'" class="{{ Route::is('page.contact') ? 'font-barlow-bold font-bold' : '' }}" />
   </ul>
-</nav> --}}
+</nav>

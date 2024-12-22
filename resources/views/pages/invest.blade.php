@@ -53,12 +53,29 @@
       </x-layout.article>
       <div>
         <h2>So legen Sie an</h2>
-        <div>
-          <div></div>
-          <div></div>
-        </div>
+        <x-layout.grid class="sm:gap-20 lg:gap-30 mt-5 md:mt-10 mb-20 lg:mb-30">
+          <x-layout.span class="border-2 border-sandstone p-10 lg:p-15">
+            <h3 class="font-barow-bold font-bold">Freies Anteilsscheinkapital*</h3>
+            <p>«Ich bestimme mit»</p>
+            <ul class="mt-15 lg:mt-20 text-pretty">
+              <li>Ab CHF 10’000</li>
+              <li>Laufzeit: keine</li>
+              <li class="text-pretty">Zinssatz: 1.5% (Stand 2.12.2024 und bis auf weiteres gültig)<br>Aktueller Zinssatz auf Anfrage</li>
+          </x-layout.span>
+          <x-layout.span class="border-2 border-sandstone p-10 lg:p-15">
+            <h3 class="font-barow-bold font-bold">Darlehen*</h3>
+            <p>«Ich lege bewusst mein Geld an»</p>
+            <ul class="mt-15 lg:mt-20 text-pretty">
+              <li>Ab CHF 50’000</li>
+              <li>Laufzeit: keine; 5 Jahre; 10 Jahre</li>
+              <li>Zinssatz: 0.75%; 1.10%; 1.40% (Stand 2.12.2024 und bis auf weiteres gültig)<br>Aktueller Zinssatz auf Anfrage</li>
+            </ul>
+          </x-layout.span>
+        </x-layout.grid>
+        <div class="text-sm">* Informativer Charakter, Änderungen vorbehalten.</div>
       </div>
     </div>
   </x-layout.inner>
 </x-layout.section>
+
 @endsection

@@ -3,7 +3,7 @@
   <a 
     href="{{ route($route) }}" 
     title="{{ $title }}"
-    {{ $attributes->merge(['class' => 'uppercase']) }}>
+    {{ $attributes->merge(['class' => 'uppercase tracking-wide']) }}>
     {{ $title }}
   </a>
 </li>

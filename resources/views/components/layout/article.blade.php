@@ -1,3 +1,3 @@
-<article class="max-w-prose hyphens-auto">
+<article {{ $attributes->merge(['class' => 'max-w-prose hyphens-auto']) }}>
   {{ $slot }}
 </article>

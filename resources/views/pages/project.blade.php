@@ -7,7 +7,7 @@
   :alt="''"
   :sizes="['md', 'lg', 'xl']"
   lazy="false"
-  class="md:aspect-[16/9]" />
+  class="md:aspect-[16/9] xl:aspect-[16/7]" />
 <x-layout.section>
   <x-layout.inner>
     <div>

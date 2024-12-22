@@ -6,6 +6,8 @@
   'format' => '.jpg', 
   'lazy' => true])
 <picture class="w-full">
+  <source media="(min-width: 1280px)" srcset="/media/img/{{ $image }}-xl.avif" type="image/avif" />
+  <source media="(min-width: 1280px)" srcset="/media/img/{{ $image }}-xl{{ $format }}">
   <source media="(min-width: 1024px)" srcset="/media/img/{{ $image }}-lg.avif" type="image/avif" />
   <source media="(min-width: 1024px)" srcset="/media/img/{{ $image }}-lg{{ $format }}">
   <source media="(min-width: 768px)" srcset="/media/img/{{ $image }}-md.avif" type="image/avif" />

@@ -9,6 +9,9 @@
   class="md:aspect-[16/9] xl:aspect-[16/7]" />
 <x-layout.section>
   <x-layout.inner>
+    <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />
+    <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-100 right-0" />
+    <x-icons.leafes.medium-green class="hidden lg:block w-34 h-19 absolute top-[270px] -right-10" />
     <div>
       <h1 class="text-sandstone">Wir sind GAL</h1>
       <x-layout.article>

@@ -7,9 +7,14 @@
   :alt="''"
   :sizes="['md', 'lg', 'xl']"
   class="md:aspect-[16/9] xl:aspect-[16/7]" />
+
 <x-layout.section>
   <x-layout.inner>
-    <div>
+    <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />
+    <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-100 right-0" />
+    <x-icons.leafes.medium-green class="hidden lg:block w-34 h-19 absolute top-[270px] -right-10" />
+    <x-icons.leafes.light-green class="hidden lg:block w-20 h-37 absolute top-[840px] -right-40" />
+     <div>
       <h1 class="text-sandstone">Nachhaltige Investition</h1>
       <x-layout.article class="mb-20 lg:mb-30">
         <p><strong>Sie möchten das Bauprojekt in Hittnau ZH der Genossenschaft Alterswohnen Luppmenpark (GAL) finanziell unterstützen? Dann sind Sie herzlich willkommen. Dabei haben Sie die Möglichkeit, Anteilscheinkapital zu zeichnen und/oder ein Darlehen zur Verfügung zu stellen.</strong></p>
@@ -78,4 +83,35 @@
   </x-layout.inner>
 </x-layout.section>
 
+<x-layout.section class="bg-ivory">
+  <x-layout.inner>
+    <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-0 -right-50" />
+    <div>
+      <h2>Interessiert?</h2>
+      <x-layout.article>
+        <p>Wenn Sie in eine sinnstiftende Branche und in ein inspirierendes Immobilienprojekt investieren wollen, dann freuen wir uns auf Ihre finanzielle Unterstützung in Form von Anteilsscheinkapital und/oder Darlehen.</p>
+        <p>Kontaktieren Sie uns für zusätzliche Informationen. Auf Wunsch präsentieren wir Ihnen das Projekt persönlich.</p>
+        <p><a href="mailto:finanzen@luppmenpark.ch" target="_blank" class="font-barlow-bold font-bold no-underline hover:underline underline-offset-4">finanzen@luppmenpark.ch</a>
+      </x-layout.article>
+    </div>
+  </x-layout.inner>
+</x-layout.section>
+
+<x-layout.section>
+  <x-layout.inner>
+    <div>
+      <h2>Absichtserklärung</h2>
+      <x-layout.article>
+        <p>Füllen Sie eine der beiden Absichtserklärungen für ein «Darlehen» oder «Darlehen mit Umwandlung in freies Anteilsscheinkapital nach Bauende» aus und schicken Sie uns diesen per Post oder Mail zu.</p>
+        <p>
+          <a 
+            href="" 
+            target="_blank" 
+            class="bg-emerald hover:bg-sandstone text-ivory hover:text-white rounded-sm font-barlow-bold font-bold text-md md:text-lg inline-flex uppercase py-5 px-15 transition-all">
+           Absichtserklärungen
+          </a>
+      </x-layout.article>
+    </div>
+  </x-layout.inner>
+</x-layout.section>
 @endsection

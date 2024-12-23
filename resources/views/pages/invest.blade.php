@@ -105,7 +105,8 @@
         <p>Füllen Sie eine der beiden Absichtserklärungen für ein «Darlehen» oder «Darlehen mit Umwandlung in freies Anteilsscheinkapital nach Bauende» aus und schicken Sie uns diesen per Post oder Mail zu.</p>
         <p>
           <a 
-            href="" 
+            href="/downloads/luppmenpark-absichtserklaerung.pdf"
+            title="Download Absichtserklärung" 
             target="_blank" 
             class="bg-emerald hover:bg-sandstone text-ivory hover:text-white rounded-sm font-barlow-bold font-bold text-md md:text-lg inline-flex uppercase py-5 px-15 transition-all">
            Absichtserklärungen

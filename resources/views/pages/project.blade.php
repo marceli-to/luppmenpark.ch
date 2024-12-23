@@ -26,7 +26,7 @@
         <x-media.picture 
           :image="'luppmenpark-situation'" 
           :alt="''"
-          :sizes="['md', 'lg', 'xl']"
+          :sizes="['md', 'lg']"
           class="md:aspect-[16/9]" />
       </div>
       <x-layout.grid class="sm:gap-x-20 lg:gap-x-30">
@@ -68,7 +68,7 @@
 </x-layout.section>
 <div class="sm:my-20 hidden sm:grid sm:grid-cols-3 sm:gap-20">
   <div class="sm:col-span-1">
-    <a href="/media/img/luppmenpark-scheune-galerie-lg.jpg" data-fancybox="galerie">
+    <a href="/media/img/luppmenpark-scheune-galerie-lg.jpg" title="Luppmenpark Scheune" data-fancybox="galerie">
       <x-media.picture 
         :image="'luppmenpark-scheune-galerie-xs'" 
         :alt="''"
@@ -76,7 +76,7 @@
     </a>
   </div>
   <div class="sm:col-span-1">
-    <a href="/media/img/luppmenpark-dorfplatz-galerie-lg.jpg" data-fancybox="galerie">
+    <a href="/media/img/luppmenpark-dorfplatz-galerie-lg.jpg" title="Luppmenpark Dorfplatz" data-fancybox="galerie">
       <x-media.picture 
         :image="'luppmenpark-dorfplatz-galerie-xs'" 
         :alt="''"
@@ -84,7 +84,7 @@
     </a>
   </div>
   <div class="sm:col-span-1">
-    <a href="/media/img/luppmenpark-bachhaus-innen-galerie-lg.jpg" data-fancybox="galerie">
+    <a href="/media/img/luppmenpark-bachhaus-innen-galerie-lg.jpg" title="Luppmenpark Bachhaus" data-fancybox="galerie">
       <x-media.picture 
         :image="'luppmenpark-bachhaus-innen-galerie-xs'" 
         :alt="''"

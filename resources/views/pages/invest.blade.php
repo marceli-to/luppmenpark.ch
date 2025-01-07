@@ -103,14 +103,22 @@
       <h2>Absichtserklärung</h2>
       <x-layout.article>
         <p>Füllen Sie eine der beiden Absichtserklärungen für ein «Darlehen» oder «Darlehen mit Umwandlung in freies Anteilsscheinkapital nach Bauende» aus und schicken Sie uns diesen per Post oder Mail zu.</p>
-        <p>
+        <div class="flex gap-x-15 mt-15 lg:mt-20">
           <a 
-            href="/downloads/luppmenpark-absichtserklaerung.pdf"
-            title="Download Absichtserklärung" 
+            href="/downloads/luppmenpark-absichtserklaerung-darlehen.pdf"
+            title="Download Absichtserklärung Darlehen" 
             target="_blank" 
             class="bg-emerald hover:bg-sandstone text-ivory hover:text-white rounded-sm font-barlow-bold font-bold text-md md:text-lg inline-flex uppercase py-5 px-15 transition-all">
-           Absichtserklärungen
+            Darlehen
           </a>
+          <a 
+            href="/downloads/luppmenpark-absichtserklaerung-freies-anteilsscheinkapital.pdf"
+            title="Download Absichtserklärung Freies Anteilsscheinkapital" 
+            target="_blank" 
+            class="bg-emerald hover:bg-sandstone text-ivory hover:text-white rounded-sm font-barlow-bold font-bold text-md md:text-lg inline-flex uppercase py-5 px-15 transition-all">
+            Freies Anteilsscheinkapital
+          </a>
+        </div>
       </x-layout.article>
     </div>
   </x-layout.inner>

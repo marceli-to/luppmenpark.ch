@@ -14,7 +14,7 @@ use App\Http\Controllers\PageController;
 */
 
 Route::view('/', 'pages.project')->name('page.project');
-Route::view('/wir-sind-gal', 'pages.about')->name('page.about');
+Route::view('/genossenschaft', 'pages.about')->name('page.about');
 Route::view('/investition', 'pages.invest')->name('page.invest');
 Route::view('/kontakt', 'pages.contact')->name('page.contact');
 Route::view('/impressum', 'pages.imprint')->name('page.imprint');

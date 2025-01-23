@@ -13,12 +13,21 @@
     <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-100 right-0" />
     <x-icons.leafes.medium-green class="hidden lg:block w-34 h-19 absolute top-[270px] -right-10" />
     <div>
-      <h1 class="text-sandstone">Wir sind GAL</h1>
+      <h1 class="text-sandstone">Genossenschaft</h1>
       <x-layout.article>
         <p>An der Gründungsversammlung vom 14. Mai 2013 wurde die gemeinnützige Genossenschaft Alterswohnen Luppmenpark (GAL) aus der Taufe gehoben. Sie verfolgt den Zweck, vor allem älteren Personen von Hittnau gesunden, hindernisarmen und preisgünstigen Wohnraum zu verschaffen – so wie es die frühere Emil-Spörri-Stiftung vorsah. Die GAL fördert damit das Zusammenleben im Sinne einer gesamtgesellschaftlichen Verantwortung sowie gegenseitiger Solidarität.</p>
         <p>Der Vorstand, der Kompetenzen in den Bereichen Bau, Recht, Finanzen, Kommunikation und Soziales einbringt und darüber hinaus von unabhängigen Immobilien- und Finanzierungsexperten begleitet wird, geniesst die Unterstützung der mittlerweile mehr als 120 Genossenschafter. Gemeinsam haben sie einen langen und hindernisreichen Weg hin zur Realisierung des Projektes zurückgelegt.</p>
+        <div class="space-y-15 xs:space-y-0 xs:flex xs:gap-x-15 mt-15 lg:mt-20">
+          <a 
+            href="/downloads/luppmenpark-statuten.pdf"
+            title="Download Statuten" 
+            target="_blank" 
+            class="bg-emerald hover:bg-sandstone text-ivory hover:text-white rounded-sm font-barlow-bold font-bold text-md md:text-lg inline-flex uppercase py-5 px-15 transition-all w-auto">
+            Statuten
+          </a>
+        </div>
       </x-layout.article>
-      <x-layout.grid class="mt-20 lg:mt-40 max-w-prose xs:grid xs:grid-cols-12 xs:gap-16 lg:gap-20">
+      {{-- <x-layout.grid class="mt-20 lg:mt-40 max-w-prose xs:grid xs:grid-cols-12 xs:gap-16 lg:gap-20">
         <x-layout.span class="xs:!col-span-4">
           <figure>
             <x-media.picture 
@@ -58,7 +67,7 @@
               </figcaption>
           </figure>
         </x-layout.span>
-      </x-layout.grid>
+      </x-layout.grid> --}}
     </div>
   </x-layout.inner>
 </x-layout.section>

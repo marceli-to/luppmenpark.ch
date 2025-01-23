@@ -33,7 +33,7 @@
     <x-layout.span class="relative sm:col-span-full">
       <x-form.input name="date_of_birth" type="date" placeholder="Geburtsdatum*" isWire="true" />
       @error('date_of_birth')
-        <x-form.error message="{{ $date_of_birth }}" />
+        <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
     <x-layout.span class="relative sm:col-span-full">
@@ -53,6 +53,20 @@
       @error('message')
         <x-form.error message="{{ $message }}" />
       @enderror 
+    </x-layout.span>
+    <x-layout.span class="relative sm:col-span-full">
+      @error('commit')
+        <x-form.error 
+          message="Anteilscheinsverpflichtung muss akzeptiert werden"
+          class="relative right-auto left-0 mb-6"
+          />
+      @enderror
+      <div class="flex items-start">
+        <x-form.checkbox name="commit" id="commit" isWire="true" class="mt-2 lg:mt-6" />
+        <x-form.checkbox-label for="commit" class="ml-6 lg:!ml-10">
+          Ich verpflichte mich, mindestens einen Anteilschein à CHF 500.– zu zeichnen und die Einzahlung innert 30 Tagen nach Aufnahme durch den Vorstand vollständig einzuzahlen.
+        </x-form.checkbox-label>
+      </div>
     </x-layout.span>
     <x-layout.span class="relative sm:col-span-full">
       @error('privacy')

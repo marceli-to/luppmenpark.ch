@@ -36,8 +36,11 @@ class ContactMember extends Component
   #[Rule('required')]
   public $message;
 
-  #[Rule('required')]
+  #[Rule('accepted')]
   public $privacy;
+
+  #[Rule('accepted')]
+  public $commit;
 
   public function save()
   {

@@ -85,20 +85,6 @@
 
 <x-layout.section class="bg-ivory">
   <x-layout.inner>
-    <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-0 -right-50" />
-    <div>
-      <h2>Interessiert?</h2>
-      <x-layout.article>
-        <p>Wenn Sie in eine sinnstiftende Branche und in ein inspirierendes Immobilienprojekt investieren wollen, dann freuen wir uns auf Ihre finanzielle Unterstützung in Form von Anteilsscheinkapital und/oder Darlehen.</p>
-        <p>Kontaktieren Sie uns für zusätzliche Informationen. Auf Wunsch präsentieren wir Ihnen das Projekt persönlich.</p>
-        <p><a href="mailto:finanzen@luppmenpark.ch" target="_blank" title="Schreiben Sie uns eine E-Mail" class="font-barlow-bold font-bold no-underline hover:underline underline-offset-4">finanzen@luppmenpark.ch</a>
-      </x-layout.article>
-    </div>
-  </x-layout.inner>
-</x-layout.section>
-
-<x-layout.section>
-  <x-layout.inner>
     <div>
       <h2>Absichtserklärung</h2>
       <x-layout.article>
@@ -119,6 +105,20 @@
             Freies Anteilsscheinkapital
           </a>
         </div>
+      </x-layout.article>
+    </div>
+  </x-layout.inner>
+</x-layout.section>
+
+<x-layout.section>
+  <x-layout.inner>
+    <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-0 -right-50" />
+    <div>
+      <h2>Interessiert?</h2>
+      <x-layout.article>
+        <p>Wenn Sie in eine sinnstiftende Branche und in ein inspirierendes Immobilienprojekt investieren wollen, dann freuen wir uns auf Ihre finanzielle Unterstützung in Form von Anteilsscheinkapital und/oder Darlehen.</p>
+        <p>Kontaktieren Sie uns für zusätzliche Informationen. Auf Wunsch präsentieren wir Ihnen das Projekt persönlich.</p>
+        <p><a href="mailto:finanzen@luppmenpark.ch" target="_blank" title="Schreiben Sie uns eine E-Mail" class="font-barlow-bold font-bold no-underline hover:underline underline-offset-4">finanzen@luppmenpark.ch</a>
       </x-layout.article>
     </div>
   </x-layout.inner>

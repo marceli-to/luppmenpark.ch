@@ -2,6 +2,9 @@
 @section('seo_title', 'Projekt | Alterswohnen Luppmenpark')
 @section('seo_description', 'Entdecken Sie idyllisches Wohnen im denkmalgeschützten Luppmenpark mit 39 barrierefreien Wohneinheiten. Die Überbauung im Weilerstil bietet einen gemeinschaftlichen Lindenhof, vielfältige Wohnungsgrößen und integrierte Spitex-Dienste.')
 @section('content')
+@if (session()->has('status'))
+<x-form.state />
+@endif
 <x-media.picture 
   :image="'luppmenpark-park'" 
   :alt="''"

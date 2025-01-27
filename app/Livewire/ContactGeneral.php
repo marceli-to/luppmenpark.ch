@@ -58,7 +58,7 @@ class ContactGeneral extends Component
     Notification::route('mail', $contact->email)->notify(new ContactUserEmail($contact));
     session()->flash('status', 'Inquiry was submitted');
     $this->reset();
-    // redirect()->route('page.project');
+    redirect()->route('page.contact');
   }
 
   public function render()

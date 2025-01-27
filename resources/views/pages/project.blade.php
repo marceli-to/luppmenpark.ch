@@ -60,7 +60,7 @@
     </div>
     <div>
       <x-media.picture 
-        :image="'luppmenpark-scheune-galerie'" 
+        :image="'luppmenpark-bachhaus-innen-galerie'" 
         :alt="''"
         class="md:aspect-[16/9]" />
     </div>

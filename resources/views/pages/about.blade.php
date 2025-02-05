@@ -27,47 +27,136 @@
           </a>
         </div>
       </x-layout.article>
-      {{-- <x-layout.grid class="mt-20 lg:mt-40 max-w-prose xs:grid xs:grid-cols-12 xs:gap-16 lg:gap-20">
+      <x-layout.grid class="mt-20 lg:mt-40 max-w-prose xs:grid xs:grid-cols-12 xs:gap-16 lg:gap-20">
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            <x-media.picture 
+            {{-- <x-media.picture 
               :image="'luppmenpark-team-dummy'" 
               :alt="''"
-              class="aspect-square" />
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
               <figcaption class="pt-5 lg:pt-10">
-                <h3 class="font-barow-bold font-bold">Max Mustermann</h3>
-                <div>Position</div>
-                <div class="mt-5 lg:mt-10">E-Mail</div>
+                <h3 class="font-barow-bold font-bold">Bruno Schiess</h3>
+                <div>Präsident</div>
+                <div>
+                  <a href="mailto:praesident@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
               </figcaption>
           </figure>
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            <x-media.picture 
+            {{-- <x-media.picture 
               :image="'luppmenpark-team-dummy'" 
               :alt="''"
-              class="aspect-square" />
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
               <figcaption class="pt-5 lg:pt-10">
-                <h3 class="font-barow-bold font-bold">Max Mustermann</h3>
-                <div>Position</div>
-                <div class="mt-5 lg:mt-10">E-Mail</div>
+                <h3 class="font-barow-bold font-bold">Felix Jucker</h3>
+                <div>Vizepräsident/Vorsteher Baukommission</div>
+                <div>
+                  <a href="mailto:bauen@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
               </figcaption>
           </figure>
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            <x-media.picture 
+            {{-- <x-media.picture 
               :image="'luppmenpark-team-dummy'" 
               :alt="''"
-              class="aspect-square" />
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
               <figcaption class="pt-5 lg:pt-10">
-                <h3 class="font-barow-bold font-bold">Max Mustermann</h3>
-                <div>Position</div>
-                <div class="mt-5 lg:mt-10">E-Mail</div>
+                <h3 class="font-barow-bold font-bold">Christoph Berweger</h3>
+                <div>Vorsteher Finanzkommission</div>
+                <div>
+                  <a href="mailto:finanzen@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
               </figcaption>
           </figure>
         </x-layout.span>
-      </x-layout.grid> --}}
+        <x-layout.span class="xs:!col-span-4">
+          <figure>
+            {{-- <x-media.picture 
+              :image="'luppmenpark-team-dummy'" 
+              :alt="''"
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
+              <figcaption class="pt-5 lg:pt-10">
+                <h3 class="font-barow-bold font-bold">Susanne Brunner</h3>
+                <div>Buchhaltung</div>
+                <div>
+                  <a href="mailto:susanne.brunner@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
+              </figcaption>
+          </figure>
+        </x-layout.span>
+        <x-layout.span class="xs:!col-span-4">
+          <figure>
+            {{-- <x-media.picture 
+              :image="'luppmenpark-team-dummy'" 
+              :alt="''"
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
+              <figcaption class="pt-5 lg:pt-10">
+                <h3 class="font-barow-bold font-bold">Reto Huber</h3>
+                <div>Delegierter Gemeinde Hittnau</div>
+                <div>
+                  <a href="mailto:reto.huber@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
+              </figcaption>
+          </figure>
+        </x-layout.span>
+        <x-layout.span class="xs:!col-span-4">
+          <figure>
+            {{-- <x-media.picture 
+              :image="'luppmenpark-team-dummy'" 
+              :alt="''"
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
+              <figcaption class="pt-5 lg:pt-10">
+                <h3 class="font-barow-bold font-bold">Elisabeth Meyer</h3>
+                <div>Aktuarin</div>
+                <div>
+                  <a href="mailto:info@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
+              </figcaption>
+          </figure>
+        </x-layout.span>
+        <x-layout.span class="xs:!col-span-4">
+          <figure>
+            {{-- <x-media.picture 
+              :image="'luppmenpark-team-dummy'" 
+              :alt="''"
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
+              <figcaption class="pt-5 lg:pt-10">
+                <h3 class="font-barow-bold font-bold">Pia Wertheimer</h3>
+                <div>Vorsteherin Kommunikation</div>
+                <div>
+                  <a href="mailto:kommunikation@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
+              </figcaption>
+          </figure>
+        </x-layout.span>
+        <x-layout.span class="xs:!col-span-4">
+          <figure>
+            {{-- <x-media.picture 
+              :image="'luppmenpark-team-dummy'" 
+              :alt="''"
+              class="aspect-square" /> --}}
+              <div class="bg-sandstone aspect-square"></div>
+              <figcaption class="pt-5 lg:pt-10">
+                <h3 class="font-barow-bold font-bold">Bert Brauer</h3>
+                <div>Kommunikation</div>
+                <div>
+                  <a href="mailto:bert.brauer@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                </div>
+              </figcaption>
+          </figure>
+        </x-layout.span>
+      </x-layout.grid>
     </div>
   </x-layout.inner>
 </x-layout.section>

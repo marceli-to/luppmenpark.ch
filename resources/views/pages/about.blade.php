@@ -101,7 +101,7 @@
               <div class="bg-sandstone aspect-square"></div>
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Reto Huber</h3>
-                <div>Delegierter Gemeinde Hittnau</div>
+                <div>Delegierter<br>Gemeinde Hittnau</div>
                 <div>
                   <a href="mailto:reto.huber@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
                 </div>

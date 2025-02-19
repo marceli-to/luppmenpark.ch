@@ -10,10 +10,10 @@
       <div>
         Telefon 
         <a 
-          href="tel:044 950 12 21" 
+          href="tel:044 950 20 81" 
           title="Rufen Sie uns an"
           class="hover:underline hover:decoration-1 hover:underline-offset-4">
-          044 950 12 21
+          044 950 20 81
         </a>
         <br>
         <a 

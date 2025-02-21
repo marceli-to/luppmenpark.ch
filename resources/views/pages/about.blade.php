@@ -30,11 +30,12 @@
       <x-layout.grid class="mt-20 lg:mt-40 max-w-prose xs:grid xs:grid-cols-12 xs:gap-16 lg:gap-20">
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Bruno-Schiess'" 
+              :alt="'Bruno Schiess'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Bruno Schiess</h3>
                 <div>Präsident</div>
@@ -46,11 +47,12 @@
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Felix-Jucker'" 
+              :alt="'Felix Jucker'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Felix Jucker</h3>
                 <div>Vizepräsident/Vorsteher Baukommission</div>
@@ -62,11 +64,12 @@
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Christoph-Berweger'" 
+              :alt="'Christoph Berweger'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Christoph Berweger</h3>
                 <div>Vorsteher Finanzkommission</div>
@@ -78,11 +81,12 @@
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Susanne-Brunner'" 
+              :alt="'Susanne Brunner'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Susanne Brunner</h3>
                 <div>Buchhaltung</div>
@@ -94,11 +98,12 @@
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Reto-Huber'" 
+              :alt="'Reto Huber'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Reto Huber</h3>
                 <div>Delegierter<br>Gemeinde Hittnau</div>
@@ -110,11 +115,12 @@
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Elisabeth-Meyer'" 
+              :alt="'Elisabeth Meyer'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Elisabeth Meyer</h3>
                 <div>Aktuarin</div>
@@ -126,11 +132,12 @@
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Pia-Wertheimer'" 
+              :alt="'Pia Wertheimer'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Pia Wertheimer</h3>
                 <div>Vorsteherin Kommunikation</div>
@@ -142,11 +149,12 @@
         </x-layout.span>
         <x-layout.span class="xs:!col-span-4">
           <figure>
-            {{-- <x-media.picture 
-              :image="'luppmenpark-team-dummy'" 
-              :alt="''"
-              class="aspect-square" /> --}}
-              <div class="bg-sandstone aspect-square"></div>
+            <x-media.picture 
+              :image="'luppmenpark-team-Bert-Brauer'" 
+              :alt="'Bert Brauer'"
+              width="400"
+              height="400"
+              class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
                 <h3 class="font-barow-bold font-bold">Bert Brauer</h3>
                 <div>Kommunikation</div>

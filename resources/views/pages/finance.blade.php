@@ -1,5 +1,5 @@
 @extends('app')
-@section('seo_title', 'Finanzierungsmöglichkeiten | Alterswohnen Luppmenpark')
+@section('seo_title', 'FAQ – Finanzierungsmöglichkeiten | Alterswohnen Luppmenpark')
 @section('seo_description', 'Entdecken Sie idyllisches Wohnen im denkmalgeschützten Luppmenpark mit 39 barrierefreien Wohneinheiten. Die Überbauung im Weilerstil bietet einen gemeinschaftlichen Lindenhof, vielfältige Wohnungsgrößen und integrierte Spitex-Dienste.')
 @section('content')
 <x-layout.section>
@@ -7,7 +7,7 @@
     <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />
     <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-140 right-0" />
     <div>
-      <h1 class="text-sandstone">FAQ zu den Finanzierungsmöglichkeiten</h1>
+      <h1 class="text-sandstone">FAQ – Finanzierungsmöglichkeiten</h1>
       <x-layout.article class="mb-15 sm:mb-20">
         <h2 class="mb-5">Wie sieht der Zeitplan des Projektes aus?</h2>
         <div>

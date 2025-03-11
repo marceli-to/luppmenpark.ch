@@ -5,6 +5,7 @@
     <x-menu.item :route="'page.project'" :title="'Projekt'" class="{{ Route::is('page.project') ? 'font-barlow-bold font-bold' : '' }}" />
     <x-menu.item :route="'page.about'" :title="'Genossenschaft'" class="{{ Route::is('page.about') ? 'font-barlow-bold font-bold' : '' }}" />
     <x-menu.item :route="'page.invest'" :title="'Investition'" class="{{ Route::is('page.invest') ? 'font-barlow-bold font-bold' : '' }}" />
+    <x-menu.item :route="'page.finance'" :title="'Finanzierung'" class="{{ Route::is('page.finance') ? 'font-barlow-bold font-bold' : '' }}" />
     <x-menu.item :route="'page.contact'" :title="'Kontakt'" class="{{ Route::is('page.contact') ? 'font-barlow-bold font-bold' : '' }}" />
   </ul>
 </nav>

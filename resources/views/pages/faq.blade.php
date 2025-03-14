@@ -109,7 +109,25 @@
         <h2 class="mb-5">Wie unterscheidet sich die Baugenossenschaft von einer Immobiliengesellschaft?</h2>
         <div>Die Tätigkeit der Genossenschaft ist gemeinnützig und nicht gewinnstrebig. Die Erträge werden für die Instandhaltung der Gebäude verwendet. Es gibt keine externen Beteiligte, die eine Profit erhalten.</div>
       </x-layout.article>
-
+    </div>
+  </x-layout.inner>
+</x-layout.section>
+<x-layout.section class="bg-ivory">
+  <x-layout.inner>
+    <div>
+      <h2>Mehr Informationen</h2>
+      <x-layout.article>
+        <p>Erfahren Sie mehr zu unseren nachhaltigen Finanzierungsmöglichkeiten und investieren Sie in eine sinnstiftende Branche und in ein inspirierendes Immobilienprojekt.</p>
+        <div class="space-y-15 xs:space-y-0 xs:flex xs:gap-x-15 mt-15 lg:mt-20">
+          <a 
+            href="/investition"
+            title="Investition" 
+            target="_blank" 
+            class="bg-emerald hover:bg-sandstone text-ivory hover:text-white rounded-sm font-barlow-bold font-bold text-md md:text-lg inline-flex uppercase py-5 px-15 transition-all w-auto">
+            Investition
+          </a>
+        </div>
+      </x-layout.article>
     </div>
   </x-layout.inner>
 </x-layout.section>

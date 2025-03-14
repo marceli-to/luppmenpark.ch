@@ -122,7 +122,6 @@
           <a 
             href="/investition"
             title="Investition" 
-            target="_blank" 
             class="bg-emerald hover:bg-sandstone text-ivory hover:text-white rounded-sm font-barlow-bold font-bold text-md md:text-lg inline-flex uppercase py-5 px-15 transition-all w-auto">
             Investition
           </a>

@@ -6,7 +6,7 @@
     <x-menu.item :route="'page.about'" :title="'Genossenschaft'" class="{{ Route::is('page.about') ? 'font-barlow-bold font-bold' : '' }}" />
     <x-menu.item :route="'page.invest'" :title="'Investition'" class="{{ Route::is('page.invest') ? 'font-barlow-bold font-bold' : '' }}" />
     <x-menu.item :route="'page.faq'" :title="'FAQ'" class="{{ Route::is('page.faq') ? 'font-barlow-bold font-bold' : '' }}" />
-    <x-menu.item :route="'page.media'" :title="'Media'" class="{{ Route::is('page.media') ? 'font-barlow-bold font-bold' : '' }}" />
+    <x-menu.item :route="'page.download'" :title="'Media'" class="{{ Route::is('page.download') ? 'font-barlow-bold font-bold' : '' }}" />
     <x-menu.item :route="'page.contact'" :title="'Kontakt'" class="{{ Route::is('page.contact') ? 'font-barlow-bold font-bold' : '' }}" />
   </ul>
 </nav>

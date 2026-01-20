@@ -20,7 +20,7 @@ Route::view('/kontakt', 'pages.contact')->name('page.contact');
 Route::view('/impressum', 'pages.imprint')->name('page.imprint');
 Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
 Route::view('/faq', 'pages.faq')->name('page.faq');
-Route::view('/media', 'pages.media')->name('page.media');
+Route::view('/download', 'pages.media')->name('page.download');
 
 
 

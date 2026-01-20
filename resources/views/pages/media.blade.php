@@ -10,7 +10,7 @@
       <h1 class="text-sandstone">Media</h1>
       <x-layout.article>
         <h2>Hittnau INTERN</h2>
-        {{-- <ul class="flex flex-col space-y-10">
+        <ul class="flex flex-col space-y-10">
           <li>
             <a href="{{ asset('storage/HittnauINTERN_182.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 182 (PDF)</a>
           </li>
@@ -44,7 +44,7 @@
           <li>
             <a href="{{ asset('storage/HittnauINTERN_197.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 197 (PDF)</a>
           </li>
-        </ul> --}}
+        </ul>
       </x-layout.article>
     </div>
   </x-layout.inner>

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh issue view:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Media page and update FAQ content\n\n- Update FAQ timeline with new milestones \\(Migros Bank financing secured\\)\n- Add 3 new FAQ questions about apartment allocation and membership\n- Create new Media page with links to Hittnau INTERN PDFs\n- Add Media navigation item between FAQ and Kontakt\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

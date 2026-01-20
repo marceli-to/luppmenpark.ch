@@ -14,32 +14,32 @@
           <div class="mb-10 sm:mb-0">Die zeitlichen Meilensteine des Projektes:</div>
           <div class="flex flex-col space-y-10">
             <div class="sm:flex">
-              <div class="sm:w-1/4">Sommer 2024:</div>
+              <div class="sm:w-1/4">Ende 2024:</div>
               <div class="sm:w-3/4">Baueingabe</div>
             </div>
             <div class="sm:flex">
-              <div class="sm:w-1/4">Februar 2025:</div>
+              <div class="sm:w-1/4">Anfang 2025:</div>
               <div class="sm:w-3/4">öffentliche Bauausschreibung</div>
             </div>
             <div class="sm:flex">
-              <div class="sm:w-1/4">April 2025:</div>
-              <div class="sm:w-3/4">frühester Zeitpunkt für die Eröffnung des Bauentscheides</div>
+              <div class="sm:w-1/4">Sommer 2025:</div>
+              <div class="sm:w-3/4">Baubewilligung erhalten</div>
             </div>
             <div class="sm:flex">
-              <div class="sm:w-1/4">Mai 2025:</div>
-              <div class="sm:w-3/4">frühester Zeitpunkt für die Rechtskraft der Baubewilligung</div>
+              <div class="sm:w-1/4">Spätsommer 2025:</div>
+              <div class="sm:w-3/4">Finanzierung ist gesichert, die Hypothek wird von der Migros Bank zugesichert.</div>
             </div>
             <div class="sm:flex">
-              <div class="sm:w-1/4">September 2025:</div>
-              <div class="sm:w-3/4">frühester Zeitpunkt für die Baufreigabe</div>
+              <div class="sm:w-1/4">Herbst 2025:</div>
+              <div class="sm:w-3/4">Baubewilligung rechtskräftig</div>
             </div>
             <div class="sm:flex">
-              <div class="sm:w-1/4">Frühling 2026:</div>
-              <div class="sm:w-3/4">frühestmöglicher Baubeginn</div>
+              <div class="sm:w-1/4">Frühjahr 2026:</div>
+              <div class="sm:w-3/4">Baufreigabe</div>
             </div>
             <div class="sm:flex">
-              <div class="sm:w-1/4">Frühling 2028:</div>
-              <div class="sm:w-3/4">frühestmögliche Fertigstelltung des Bauprojektes</div>
+              <div class="sm:w-1/4">Herbst 2026:</div>
+              <div class="sm:w-3/4">Baubeginn</div>
             </div>
           </div>
         </div>
@@ -108,6 +108,21 @@
       <x-layout.article class="mb-15 sm:mb-20">
         <h2 class="mb-5">Wie unterscheidet sich die Baugenossenschaft von einer Immobiliengesellschaft?</h2>
         <div>Die Tätigkeit der Genossenschaft ist gemeinnützig und nicht gewinnstrebig. Die Erträge werden für die Instandhaltung der Gebäude verwendet. Es gibt keine externen Beteiligte, die eine Profit erhalten.</div>
+      </x-layout.article>
+
+      <x-layout.article class="mb-15 sm:mb-20">
+        <h2 class="mb-5">Wann werden die Wohnungen vergeben?</h2>
+        <div>Wir rechnen damit, dass wir diesen Schritt ein Jahr vor der Fertigstellung vornehmen können.</div>
+      </x-layout.article>
+
+      <x-layout.article class="mb-15 sm:mb-20">
+        <h2 class="mb-5">Muss man GenossenschafterIn sein, um eine Wohnung mieten zu können?</h2>
+        <div>Ja.</div>
+      </x-layout.article>
+
+      <x-layout.article class="mb-15 sm:mb-20">
+        <h2 class="mb-5">Die Finanzierung ist durch die Zusage der Migros Bank gesichert, braucht es da noch Investoren?</h2>
+        <div>Ja, dies verbessert weiterhin die finanzielle Situation der Genossenschaft und ihre Ausgangslage.</div>
       </x-layout.article>
     </div>
   </x-layout.inner>

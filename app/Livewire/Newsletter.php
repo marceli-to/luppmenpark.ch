@@ -10,6 +10,8 @@ use Carbon\Exceptions\InvalidFormatException;
 class Newsletter extends Component
 {
   public $interest = [];
+  public $preferred_house = [];
+  public $preferred_floor = [];
   public $firstname;
   public $name;
   public $address;
@@ -25,9 +27,15 @@ class Newsletter extends Component
   {
     return [
       'interest' => 'required',
+      'preferred_house' => 'required',
+      'preferred_floor' => 'required',
       'firstname' => 'required',
       'name' => 'required',
+      'address' => 'required',
+      'location' => 'required',
+      'date_of_birth' => 'required|date',
       'email' => 'required|email',
+      'phone' => 'required',
       'household_count' => 'required',
       'cooperative_member' => 'required',
       'privacy' => 'accepted',
@@ -38,9 +46,15 @@ class Newsletter extends Component
   {
     return [
       'interest' => 'Interesse',
+      'preferred_house' => 'Bevorzugtes Haus',
+      'preferred_floor' => 'Bevorzugtes Stockwerk',
       'firstname' => 'Vorname',
       'name' => 'Name',
+      'address' => 'Adresse',
+      'location' => 'PLZ / Ort',
+      'date_of_birth' => 'Geburtsdatum',
       'email' => 'E-Mail',
+      'phone' => 'Telefon',
       'household_count' => 'Anzahl Personen im Haushalt',
       'cooperative_member' => 'Bereits Genossenschaftler, seit?',
       'privacy' => 'Datenschutzerklärung',
@@ -53,6 +67,8 @@ class Newsletter extends Component
 
     $subscription = NewsletterSubscription::create([
       'interest' => implode(', ', $this->interest),
+      'preferred_house' => implode(', ', $this->preferred_house),
+      'preferred_floor' => implode(', ', $this->preferred_floor),
       'firstname' => $this->firstname,
       'name' => $this->name,
       'email' => $this->email,

@@ -81,8 +81,8 @@
 <x-layout.section class="bg-ivory">
   <x-layout.inner>
     <div class="max-w-3xl">
-      <h1 class="text-charcoal">Grundrissplan Muster</h1>
-      <p>Pro Gebäude ist ein exemplarischer Grundriss dargestellt, der einen ersten Eindruck der Wohnungsaufteilung vermittelt.</p>
+      <h1 class="text-charcoal">Beispielgrundrisse</h1>
+      <p>Pro Gebäude ist ein exemplarischer Grundriss dargestellt, der einen ersten Eindruck der Wohnungsaufteilung vermittelt. Die detaillierten Grundrisse der einzelnen Wohnungen werden zu einem späteren Zeitpunkt aufgeschaltet.</p>
       <ul class="flex flex-col space-y-10 mt-15 lg:mt-20">
         <li>
           <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Teichhaus.pdf') }}" target="_blank" class="underline hover:no-underline">

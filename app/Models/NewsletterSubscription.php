@@ -6,6 +6,8 @@ class NewsletterSubscription extends Model
 {
   protected $fillable = [
     'interest',
+    'preferred_house',
+    'preferred_floor',
     'firstname',
     'name',
     'address',

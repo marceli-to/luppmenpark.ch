@@ -11,6 +11,14 @@
     {{ $data->interest }}
   </div>
   <div class="text-base pb-base">
+    <strong>Bevorzugtes Haus</strong><br>
+    {{ $data->preferred_house }}
+  </div>
+  <div class="text-base pb-base">
+    <strong>Bevorzugtes Stockwerk</strong><br>
+    {{ $data->preferred_floor }}
+  </div>
+  <div class="text-base pb-base">
     <strong>Vorname</strong><br>
     {{ $data->firstname }}
   </div>

@@ -13,6 +13,12 @@
   class="md:aspect-[16/7] xl:aspect-[16/5]" />
 <x-layout.section>
   <x-layout.inner>
+    <a 
+      href="#newsletter"
+      class="block absolute right-0 lg:right-40 -top-50 -translate-y-1/2 md:-top-30 lg:-top-40 w-100 h-100 md:w-140 md:h-140 lg:w-192 lg:h-192 hover:-rotate-2 transition-transform duration-300"
+      aria-label="Newsletter abonnieren">
+      <x-icons.badge class="w-full h-auto" />
+    </a>
     <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />
     <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-100 right-0" />
     <x-icons.leafes.medium-green class="hidden lg:block w-34 h-19 absolute top-[270px] -right-10" />
@@ -102,7 +108,7 @@
 </x-layout.section>
 
 
-<x-layout.section>
+<x-layout.section id="newsletter">
   <x-layout.inner>
     <div class="max-w-3xl">
       <h1 class="text-charcoal">Newsletter</h1>

@@ -85,22 +85,22 @@
       <p>Pro Gebäude ist ein exemplarischer Grundriss dargestellt, der einen ersten Eindruck der Wohnungsaufteilung vermittelt.</p>
       <ul class="flex flex-col space-y-10 mt-15 lg:mt-20">
         <li>
-          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Teichhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
+          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Teichhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
             Grundriss Muster Teichhaus (PDF)
           </a>
         </li>
         <li>
-          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Gaertnerhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
+          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Gaertnerhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
             Grundriss Muster Gärtnerhaus (PDF)
           </a>  
         </li>
         <li>
-          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Bachhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
+          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Bachhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
             Grundriss Muster Bachhaus (PDF)
           </a>
         </li>
         <li>
-          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Scheune.pdf') }}" target="_blank" class="underline hover:no-underline">
+          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Scheune.pdf') }}" target="_blank" class="underline hover:no-underline">
             Grundriss Muster Scheune (PDF)
           </a>
         </li>

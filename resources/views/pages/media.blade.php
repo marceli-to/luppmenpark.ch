@@ -12,37 +12,37 @@
         <h2>Hittnau INTERN</h2>
         <ul class="flex flex-col space-y-10">
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_182.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 182 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_182.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 182 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_183.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 183 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_183.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 183 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_184.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 184 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_184.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 184 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_185.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 185 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_185.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 185 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_186.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 186 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_186.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 186 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_191.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 191 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_191.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 191 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_192.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 192 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_192.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 192 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_193.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 193 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_193.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 193 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_195.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 195 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_195.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 195 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_196.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 196 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_196.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 196 (PDF)</a>
           </li>
           <li>
-            <a href="{{ asset('storage/HittnauINTERN_197.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 197 (PDF)</a>
+            <a href="{{ asset('downloads/HittnauINTERN_197.pdf') }}" target="_blank" class="underline hover:no-underline">Hittnau INTERN Nr. 197 (PDF)</a>
           </li>
         </ul>
       </x-layout.article>

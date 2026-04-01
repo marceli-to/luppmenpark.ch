@@ -40,7 +40,7 @@
       </div>
     </x-layout.span>
 
-    <x-layout.span class="relative sm:col-span-full">
+    <x-layout.span class="relative sm:col-span-full mt-5 lg:mt-10">
       <p class="font-barlow-bold font-bold text-charcoal mb-8">Bevorzugtes Haus*</p>
       @error('preferred_house')
         <x-form.error
@@ -67,7 +67,7 @@
       </div>
     </x-layout.span>
 
-    <x-layout.span class="relative sm:col-span-full">
+    <x-layout.span class="relative sm:col-span-full mt-5 lg:mt-10">
       <p class="font-barlow-bold font-bold text-charcoal mb-8">Bevorzugtes Stockwerk*</p>
       @error('preferred_floor')
         <x-form.error
@@ -94,7 +94,7 @@
       </div>
     </x-layout.span>
 
-    <x-layout.span class="relative sm:col-span-full">
+    <x-layout.span class="relative sm:col-span-full mt-5 lg:mt-10">
       <x-form.input name="firstname" placeholder="Vorname*" isWire="true" class="!bg-ivory" />
       @error('firstname')
         <x-form.error message="{{ $message }}" />

@@ -19,11 +19,11 @@
       aria-label="Newsletter abonnieren">
       <x-icons.badge class="w-full h-auto" />
     </a>
-    <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />
-    <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-100 right-0" />
-    <x-icons.leafes.medium-green class="hidden lg:block w-34 h-19 absolute top-[270px] -right-10" />
-    <x-icons.leafes.light-green class="hidden lg:block w-20 h-37 absolute top-[1224px] -right-50" />
-    <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-[1414px] -right-60" />
+    <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0 z-10" />
+    <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-100 right-0 z-10" />
+    <x-icons.leafes.medium-green class="hidden lg:block w-34 h-19 absolute top-[270px] z-10 -right-10" />
+    <x-icons.leafes.light-green class="hidden lg:block w-20 h-37 absolute top-[1224px] z-10 -right-20 xl:-right-50" />
+    <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-[1414px] z-20 -right-10 xl:-right-60" />
     <div>
       <h1 class="text-sandstone">Willkommen im Luppmenpark<br>Wohnen im Alter</h1>
       <x-layout.article>
@@ -31,11 +31,13 @@
         <p>Die beschauliche Wohnsiedlung ist eingebettet im wunderbaren, denkmalgeschützten Luppmenpark. Herzstück der Überbauung im Stil eines Weilers bildet der Lindenhof mit seinem einfachen Dorfbrunnen, Bänkchen zum Verweilen und hübschen Blumenbeeten. Der Hof ist barrierefrei zugänglich und Ort der Begegnung und der Gemeinschaft. Hierhin öffnet sich auch der Gemeinschaftsraum mit seinem gedeckten Aussensitzplatz und die Hauszugänge. Darüber hinaus lädt der ganze Park mit seinen alten, schattenspendenden Bäumen zu kleinen Spaziergängen in unmittelbarer Umgebung der Überbauung ein.</p>
         <p>In vier Häusern mit individuellem Charakter werden insgesamt 39 Wohneinheiten realisiert. 17 davon sind 3.5-Zimmer-Wohnungen und 19 sind 2.5-Zimmer-Wohnungen. Ergänzt wird das Angebot durch eine 4.5-Zimmer-Wohnungen sowie zwei Studios. Darüber hinaus werden ein Atelier sowie Räumlichkeiten für die Spitex realisiert, die sich in der Überbauung permanent eingliedern wird. Zu allen Wohneinheiten gehören Kellerabteile und Einstellplätze für Velos. Parkplätze können in der Tiefgarage der Überbauung zugemietet werden.</p>
         <div class="my-20 lg:my-40">
-          <x-media.picture 
-            :image="'luppmenpark-situation'" 
-            :alt="''"
-            :sizes="['md', 'lg']"
-            class="md:aspect-[16/9]" />
+          <a href="/media/img/luppmenpark-situation-lg.jpg" title="Luppmenpark Situation" data-fancybox="galerie">
+            <x-media.picture
+              :image="'luppmenpark-situation'"
+              :alt="''"
+              :sizes="['md', 'lg']"
+              class="md:aspect-[16/9]" />
+          </a>
         </div>
       </x-layout.article>
       <x-layout.grid class="sm:gap-x-20 lg:gap-x-30">

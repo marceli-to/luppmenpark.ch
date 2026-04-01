@@ -12,6 +12,10 @@ export default {
   theme: {
     extend: {
 
+      maxWidth: {
+        'prose': '80ch',
+      },
+
       screens: {
         'xs': '500px',
       },

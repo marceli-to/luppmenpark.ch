@@ -10,7 +10,7 @@
   :alt="''"
   :sizes="['md', 'lg', 'xl']"
   lazy="false"
-  class="md:aspect-[16/9] xl:aspect-[16/7]" />
+  class="md:aspect-[16/7] xl:aspect-[16/5]" />
 <x-layout.section>
   <x-layout.inner>
     <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />
@@ -23,15 +23,15 @@
       <x-layout.article>
         <h2>Das Immobilienprojekt</h2>
         <p>Die beschauliche Wohnsiedlung ist eingebettet im wunderbaren, denkmalgeschützten Luppmenpark. Herzstück der Überbauung im Stil eines Weilers bildet der Lindenhof mit seinem einfachen Dorfbrunnen, Bänkchen zum Verweilen und hübschen Blumenbeeten. Der Hof ist barrierefrei zugänglich und Ort der Begegnung und der Gemeinschaft. Hierhin öffnet sich auch der Gemeinschaftsraum mit seinem gedeckten Aussensitzplatz und die Hauszugänge. Darüber hinaus lädt der ganze Park mit seinen alten, schattenspendenden Bäumen zu kleinen Spaziergängen in unmittelbarer Umgebung der Überbauung ein.</p>
-        <p>In vier Häusern mit individuellem Charakter werden insgesamt 39 Wohneinheiten realisiert. 17 davon sind 3.5-Zimmer-Wohnungen und 19 sind 2.5-Zimmer-Wohnungen. Ergänzt wird das Angebot durch eine 4.5 -Wohnung sowie zwei Studios. Darüber hinaus werden ein Atelier sowie Räumlichkeiten für die Spitex realisiert, die sich in der Überbauung permanent eingliedern wird. Zu allen Wohneinheiten gehören Kellerabteile und Einstellplätze für Velos. Parkplätze können in der Tiefgarage der Überbauung zugemietet werden.</p>
+        <p>In vier Häusern mit individuellem Charakter werden insgesamt 39 Wohneinheiten realisiert. 17 davon sind 3.5-Zimmer-Wohnungen und 19 sind 2.5-Zimmer-Wohnungen. Ergänzt wird das Angebot durch eine 4.5-Zimmer-Wohnungen sowie zwei Studios. Darüber hinaus werden ein Atelier sowie Räumlichkeiten für die Spitex realisiert, die sich in der Überbauung permanent eingliedern wird. Zu allen Wohneinheiten gehören Kellerabteile und Einstellplätze für Velos. Parkplätze können in der Tiefgarage der Überbauung zugemietet werden.</p>
+        <div class="my-20 lg:my-40">
+          <x-media.picture 
+            :image="'luppmenpark-situation'" 
+            :alt="''"
+            :sizes="['md', 'lg']"
+            class="md:aspect-[16/9]" />
+        </div>
       </x-layout.article>
-      <div class="my-20 lg:my-40">
-        <x-media.picture 
-          :image="'luppmenpark-situation'" 
-          :alt="''"
-          :sizes="['md', 'lg']"
-          class="md:aspect-[16/9]" />
-      </div>
       <x-layout.grid class="sm:gap-x-20 lg:gap-x-30">
         <x-layout.span>
           <h2>Leuchtturmcharakter</h2>
@@ -69,6 +69,50 @@
     </div>
   </div>
 </x-layout.section>
+
+<x-layout.section class="bg-ivory">
+  <x-layout.inner>
+    <div class="max-w-3xl">
+      <h1 class="text-charcoal">Grundrissplan Muster</h1>
+      <p>Pro Gebäude ist ein exemplarischer Grundriss dargestellt, der einen ersten Eindruck der Wohnungsaufteilung vermittelt.</p>
+      <ul class="flex flex-col space-y-10 mt-15 lg:mt-20">
+        <li>
+          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Teichhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
+            Grundriss Muster Teichhaus (PDF)
+          </a>
+        </li>
+        <li>
+          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Gaertnerhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
+            Grundriss Muster Gärtnerhaus (PDF)
+          </a>  
+        </li>
+        <li>
+          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Bachhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
+            Grundriss Muster Bachhaus (PDF)
+          </a>
+        </li>
+        <li>
+          <a href="{{ asset('storage/Luppmenpark_Vermietungsplan_Scheune.pdf') }}" target="_blank" class="underline hover:no-underline">
+            Grundriss Muster Scheune (PDF)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </x-layout.inner>
+</x-layout.section>
+
+
+<x-layout.section>
+  <x-layout.inner>
+    <div class="max-w-3xl">
+      <h1 class="text-charcoal">Newsletter</h1>
+      <p><strong>Haben Sie interesse an einer Wohnung?</strong><br>Füllen Sie das Kontaktformular unverbindlich aus. Gerne senden wir Ihnen weitere Informationen zu, sobald die Vermietung startet.</p>
+      <livewire:newsletter />
+    </div>
+  </x-layout.inner>
+</x-layout.section>
+
+
 <div class="sm:my-20 hidden sm:grid sm:grid-cols-3 sm:gap-20">
   <div class="sm:col-span-1">
     <a href="/media/img/luppmenpark-scheune-galerie-lg.jpg" title="Luppmenpark Scheune" data-fancybox="galerie">

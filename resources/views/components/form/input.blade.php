@@ -1,17 +1,17 @@
-@props(['type' => 'text', 'placeholder' => '', 'name', 'isWire' => false])
+@props(['type' => 'text', 'placeholder' => '', 'name', 'isWire' => false, 'class' => ''])
 @if ($isWire)
-  <input 
-    type="text" 
-    wire:model="{{ $name }}" 
+  <input
+    type="text"
+    wire:model="{{ $name }}"
     placeholder="{{ $placeholder }}"
     @if ($type == 'date')
     onfocus="(this.type='date')"
     @endif
-    class="bg-white rounded-sm px-10 py-10 w-full ring-0 focus:ring-0 border-none font-barlow-medium font-medium text-charcoal placeholder:text-charcoal">
+    class="bg-white rounded-sm px-10 py-10 w-full ring-0 focus:ring-0 border-none font-barlow-medium font-medium text-charcoal placeholder:text-charcoal {{ $class }}">
 @else
-  <input 
-    type="{{ $type }}" 
-    name="{{ $name }}" 
-    placeholder="{{ $placeholder }}" 
-    class="bg-white rounded-sm px-10 py-10 w-full ring-0 focus:ring-0 border-none font-barlow-medium font-medium text-charcoal placeholder:text-charcoal">
+  <input
+    type="{{ $type }}"
+    name="{{ $name }}"
+    placeholder="{{ $placeholder }}"
+    class="bg-white rounded-sm px-10 py-10 w-full ring-0 focus:ring-0 border-none font-barlow-medium font-medium text-charcoal placeholder:text-charcoal {{ $class }}">
 @endif

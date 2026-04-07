@@ -143,7 +143,7 @@
       @enderror
     </x-layout.span>
     <x-layout.span class="relative sm:col-span-full">
-      <x-form.input name="cooperative_member" placeholder="Bereits Genossenschaftler, seit?*" isWire="true" class="!bg-ivory" />
+      <x-form.input name="cooperative_member" placeholder="Mitglied bei der Genossenschaft seit?*" isWire="true" class="!bg-ivory" />
       @error('cooperative_member')
         <x-form.error message="{{ $message }}" />
       @enderror

@@ -56,7 +56,7 @@ class Newsletter extends Component
       'email' => 'E-Mail',
       'phone' => 'Telefon',
       'household_count' => 'Anzahl Personen im Haushalt',
-      'cooperative_member' => 'Bereits Genossenschaftler, seit?',
+      'cooperative_member' => 'Mitglied bei der Genossenschaft seit?',
       'privacy' => 'Datenschutzerklärung',
     ];
   }

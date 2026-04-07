@@ -38,7 +38,7 @@ class SendSubscriberList extends Command
             'Telefon',
             'Geburtsdatum',
             'Anzahl Personen im Haushalt',
-            'Bereits Genossenschaftler, seit?',
+            'Mitglied bei der Genossenschaft seit?',
             'Anmeldedatum',
         ], ';');
 

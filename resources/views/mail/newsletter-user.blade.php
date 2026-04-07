@@ -51,7 +51,7 @@
     {{ $data->household_count }}
   </div>
   <div class="text-base pb-base">
-    <strong>Bereits Genossenschaftler, seit?</strong><br>
+    <strong>Mitglied bei der Genossenschaft seit?</strong><br>
     {{ $data->cooperative_member }}
   </div>
 </x-mail::message>

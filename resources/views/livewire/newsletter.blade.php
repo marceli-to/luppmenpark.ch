@@ -168,7 +168,7 @@
         <div wire:loading>
           <x-form.spinner class="mr-12" />
         </div>
-        Newsletter abonnieren
+        Formular absenden
       </x-form.button>
     </x-layout.span>
   </x-layout.grid>

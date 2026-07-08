@@ -14,9 +14,9 @@
 <x-layout.section>
   <x-layout.inner>
     <a 
-      href="#newsletter"
+      href="#formular-fuer-interessenten"
       class="block absolute right-0 lg:right-40 -top-50 -translate-y-1/2 md:-top-30 lg:-top-40 w-100 h-100 md:w-140 md:h-140 lg:w-192 lg:h-192 hover:-rotate-2 transition-transform duration-300"
-      aria-label="Newsletter abonnieren">
+      aria-label="Formular für Interessenten">
       <x-icons.badge class="w-full h-auto" />
     </a>
     <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0 z-10" />
@@ -110,10 +110,10 @@
 </x-layout.section>
 
 
-<x-layout.section id="newsletter">
+<x-layout.section id="formular-fuer-interessenten">
   <x-layout.inner>
     <div class="max-w-3xl">
-      <h1 class="text-charcoal">Newsletter</h1>
+      <h1 class="text-charcoal">Formular für Interessenten</h1>
       <p><strong>Haben Sie interesse an einer Wohnung?</strong><br>Füllen Sie das Kontaktformular unverbindlich aus. Gerne senden wir Ihnen weitere Informationen zu, sobald die Vermietung startet.</p>
       <livewire:newsletter />
     </div>

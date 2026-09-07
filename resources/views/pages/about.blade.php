@@ -99,16 +99,16 @@
         <x-layout.span class="xs:!col-span-4">
           <figure>
             <x-media.picture 
-              :image="'luppmenpark-team-Reto-Huber'" 
-              :alt="'Reto Huber'"
+              :image="'luppmenpark-team-Raphael-Hintermann'" 
+              :alt="'Raphael Hintermann'"
               width="400"
               height="400"
               class="aspect-square" />
               <figcaption class="pt-5 lg:pt-10">
-                <h3 class="font-barow-bold font-bold">Reto Huber</h3>
+                <h3 class="font-barow-bold font-bold">Raphael Hintermann</h3>
                 <div>Delegierter<br>Gemeinde Hittnau</div>
                 <div>
-                  <a href="mailto:reto.huber@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
+                  <a href="mailto:raphael.hintermann@luppmenpark.ch" class="underline underline-offset-4 decoration-1 hover:no-underline">E-Mail</a>
                 </div>
               </figcaption>
           </figure>

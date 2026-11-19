@@ -27,7 +27,9 @@ Route::view('/download', 'pages.media')->name('page.download');
 
 /*
  * Apartment status admin. Create a login with: php artisan user:create
+ * TEMPORARILY DISABLED for the staging deploy, re-enable by removing the comment markers.
  */
+/*
 Route::prefix('admin')->group(function () {
   Route::middleware('guest')->group(function () {
     Route::get('login', [LoginController::class, 'show'])->name('login');
@@ -40,3 +42,4 @@ Route::prefix('admin')->group(function () {
     Route::post('logout', [LoginController::class, 'destroy'])->name('admin.logout');
   });
 });
+*/

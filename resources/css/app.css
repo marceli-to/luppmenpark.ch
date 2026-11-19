@@ -60,3 +60,6 @@ sup {
 .privacy p {
   @apply max-w-3xl;
 }
+[x-cloak] {
+  display: none !important;
+}

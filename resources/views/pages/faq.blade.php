@@ -38,8 +38,12 @@
               <div class="sm:w-3/4">Baufreigabe</div>
             </div>
             <div class="sm:flex">
-              <div class="sm:w-1/4">Herbst 2026:</div>
+              <div class="sm:w-1/4">Frühling 2027:</div>
               <div class="sm:w-3/4">Baubeginn</div>
+            </div>
+            <div class="sm:flex">
+              <div class="sm:w-1/4">Frühling 2029:</div>
+              <div class="sm:w-3/4">Einzug</div>
             </div>
           </div>
         </div>

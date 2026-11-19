@@ -14,10 +14,10 @@
 <x-layout.section>
   <x-layout.inner>
     <a 
-      href="#formular-fuer-interessenten"
+      href="{{ route('page.apartments') }}"
       class="block absolute right-0 lg:right-40 -top-50 -translate-y-1/2 md:-top-30 lg:-top-40 w-100 h-100 md:w-140 md:h-140 lg:w-192 lg:h-192 hover:-rotate-2 transition-transform duration-300"
-      aria-label="Formular für Interessenten">
-      <x-icons.badge class="w-full h-auto" />
+      aria-label="Jetzt bewerben für Ihr neues Zuhause – zu den Wohnungen">
+      <x-icons.badge-apply class="w-full h-auto" />
     </a>
     <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0 z-10" />
     <x-icons.leafes.green class="hidden lg:block w-20 h-37 absolute top-100 right-0 z-10" />
@@ -82,7 +82,7 @@
   <x-layout.inner>
     <div class="max-w-3xl">
       <h1 class="text-charcoal">Beispielgrundrisse</h1>
-      <p>Pro Gebäude ist ein exemplarischer Grundriss dargestellt, der einen ersten Eindruck der Wohnungsaufteilung vermittelt. Die detaillierten Grundrisse der einzelnen Wohnungen werden zu einem späteren Zeitpunkt aufgeschaltet.</p>
+      <p>Pro Gebäude ist ein exemplarischer Grundriss dargestellt, der einen ersten Eindruck der Wohnungsaufteilung vermittelt. Die detaillierten Grundrisse finden Sie unter <a href="{{ route('page.apartments') }}" class="underline hover:no-underline">Wohnungen</a>.</p>
       <ul class="flex flex-col space-y-10 mt-15 lg:mt-20">
         <li>
           <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Teichhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
@@ -105,20 +105,16 @@
           </a>
         </li>
       </ul>
+      <a
+        href="{{ route('page.apartments') }}"
+        class="inline-flex mt-20 lg:mt-30 bg-sandstone hover:bg-emerald text-ivory hover:text-white transition-all rounded-sm font-barlow-bold font-bold text-md md:text-lg uppercase py-5 px-15">
+        Alle Wohnungen
+      </a>
     </div>
   </x-layout.inner>
 </x-layout.section>
 
 
-<x-layout.section id="formular-fuer-interessenten">
-  <x-layout.inner>
-    <div class="max-w-3xl">
-      <h1 class="text-charcoal">Formular für Interessenten</h1>
-      <p><strong>Haben Sie interesse an einer Wohnung?</strong><br>Füllen Sie das Kontaktformular unverbindlich aus. Gerne senden wir Ihnen weitere Informationen zu, sobald die Vermietung startet.</p>
-      <livewire:newsletter />
-    </div>
-  </x-layout.inner>
-</x-layout.section>
 
 
 <div class="sm:my-20 hidden sm:grid sm:grid-cols-3 sm:gap-20">

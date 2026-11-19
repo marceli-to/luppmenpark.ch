@@ -27,17 +27,21 @@
     <x-icons.leafes.medium-green class="hidden lg:block w-34 h-19 absolute top-20 -right-10" />
     <x-icons.leafes.light-green class="hidden lg:block w-20 h-37 absolute top-[200px] -right-10" />
     <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-[540px] right-0" />
-    <div x-data="{ selectedForm: 'general' }" class="max-w-3xl">
+    <div x-data="{ selectedForm: @js(request('formular') === 'wohnen' ? 'living' : 'general') }" class="max-w-3xl">
       <h1 class="text-charcoal">Kontaktformular</h1>
       <x-layout.span class="relative sm:col-span-full">
         <x-form.select name="form_type" class="w-full" x-model="selectedForm">
           <option value="general">Allgemein</option>
+          <option value="living">Wohnen</option>
           <option value="member">Mitglied</option>
           <option value="investor">Investor</option>
         </x-form.select>
       </x-layout.span>
       <div x-show="selectedForm === 'general'">
         @livewire('contact-general')
+      </div>
+      <div x-show="selectedForm === 'living'" x-cloak>
+        @livewire('newsletter')
       </div>
       <div x-show="selectedForm === 'member'">
         @livewire('contact-member')

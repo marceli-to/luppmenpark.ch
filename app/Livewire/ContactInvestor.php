@@ -1,6 +1,6 @@
 <?php
 namespace App\Livewire;
-use Livewire\Attributes\Rule; 
+use Livewire\Attributes\Validate; 
 use Livewire\Component;
 use App\Models\ContactRequest;
 use Illuminate\Support\Facades\Notification;
@@ -12,30 +12,30 @@ class ContactInvestor extends Component
 {
   public $request_type = 'investor';
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $firstname;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $name;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $address;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $location;
 
-  #[Rule('required', 'email')]
+  #[Validate(['required', 'email'])]
   public $email;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $phone;
 
   public $date_of_birth;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $message;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $privacy;
 
   public function save()

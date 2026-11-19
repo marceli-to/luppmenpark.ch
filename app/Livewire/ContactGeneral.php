@@ -1,6 +1,6 @@
 <?php
 namespace App\Livewire;
-use Livewire\Attributes\Rule; 
+use Livewire\Attributes\Validate; 
 use Livewire\Component;
 use App\Models\ContactRequest;
 use Illuminate\Support\Facades\Notification;
@@ -12,27 +12,27 @@ class ContactGeneral extends Component
 {
   public $request_type = 'general';
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $firstname;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $name;
 
   public $address;
 
   public $location;
 
-  #[Rule('required', 'email')]
+  #[Validate(['required', 'email'])]
   public $email;
 
   public $phone;
 
   public $date_of_birth;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $message;
 
-  #[Rule('required')]
+  #[Validate('required')]
   public $privacy;
 
   public function save()

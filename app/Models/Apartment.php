@@ -57,11 +57,23 @@ class Apartment extends Model
     return $value ? number_format($value, 0, '.', '’') : null;
   }
 
-  /** Floor plan PDF, placed by hand as public/downloads/grundrisse/<number>.pdf. */
+  /** Floor plan PDF: grundrisse/<number>.pdf if present, else the floor plan from config('apartments.plans'). */
   public function planUrl(): ?string
   {
-    $path = "downloads/grundrisse/{$this->number}.pdf";
+    $paths = ["downloads/grundrisse/{$this->number}.pdf"];
 
-    return file_exists(public_path($path)) ? asset($path) : null;
+    foreach (config('apartments.plans', []) as $key => $numbers) {
+      if (in_array($this->number, $numbers, true)) {
+        $paths[] = "downloads/grundrisse/Luppmenpark_Grundriss_{$key}.pdf";
+      }
+    }
+
+    foreach ($paths as $path) {
+      if (file_exists(public_path($path))) {
+        return asset($path);
+      }
+    }
+
+    return null;
   }
 }

@@ -112,7 +112,7 @@
                         <span class="sr-only">Grundriss {{ $apartment->number }} (PDF)</span>
                       </a>
                     @else
-                      <span class="text-charcoal/40" title="public/downloads/grundrisse/{{ $apartment->number }}.pdf fehlt">–</span>
+                      <span class="text-charcoal/40" title="Grundriss fehlt">–</span>
                     @endif
                   </td>
 

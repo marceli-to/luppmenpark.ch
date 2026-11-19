@@ -11,6 +11,16 @@
   <title>@yield('title', 'Verwaltung') – Luppmenpark</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   @vite(['resources/css/app.css'])
+  <style>
+    /* Toast slides in, stays a few seconds, then fades out and lets clicks through. */
+    .admin-toast { animation: admin-toast 4s ease forwards; }
+    @keyframes admin-toast {
+      0% { opacity: 0; transform: translateY(-8px); }
+      8%, 85% { opacity: 1; transform: none; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+    @media (prefers-reduced-motion: reduce) { .admin-toast { animation-duration: 0s; animation-delay: 4s; } }
+  </style>
 </head>
 <body class="antialiased flex min-h-full flex-col font-barlow-medium font-medium text-charcoal text-base leading-[1.45]">
 
@@ -36,15 +46,14 @@
     </div>
   </header>
 
+  @if (session('status'))
+    <div class="admin-toast fixed right-20 top-20 z-50 rounded-sm bg-emerald px-15 py-10 text-sm text-white shadow-lg md:right-30 md:top-30" role="status">
+      {{ session('status') }}
+    </div>
+  @endif
+
   <main class="isolate flex-1">
     <div class="mx-auto max-w-6xl px-20 py-30 md:px-30 md:py-40">
-
-      @if (session('status'))
-        <div class="!mb-25 flex items-center gap-x-10 rounded-sm bg-ivory px-15 py-12 text-sm" role="status">
-          <span class="size-8 shrink-0 rounded-full bg-emerald"></span>
-          <p>{{ session('status') }}</p>
-        </div>
-      @endif
 
       @yield('content')
 

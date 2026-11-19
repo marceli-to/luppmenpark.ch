@@ -20,10 +20,11 @@
 
 ## Deploy (staging / production)
 
-Server needs **PHP 8.3+**.
+Server needs **PHP 8.3+** (CLI `php` is 8.4). Staging: `/staging.luppmenpark.ch` (docroot `public`),
+live: `/httpdocs`. Plain `composer` works.
 
 ```
-composer install --no-dev
+composer install --optimize-autoloader --no-dev
 php artisan migrate --force
 php artisan apartments:seed
 php artisan user:create
@@ -32,6 +33,12 @@ php artisan optimize:clear
 
 Check `.env`: `APP_DEBUG=false`, HTTPS with `SESSION_SECURE_COOKIE=true`.
 
+- **Never** run `config:cache` / `route:cache` / `view:cache` over SSH: the shell is chrooted, cached
+  absolute paths don't exist for the web server → 500. Only `optimize:clear`.
+- `.env` copied from `/httpdocs/.env` has no trailing newline – check before appending lines.
+- `public/robots.txt` is gitignored: staging has a `Disallow: /` one.
+- i360 warning on every CLI `php` call is Imunify noise, harmless.
+
 ## Next
 
 - [ ] Client: intro text for Wohnungen (placeholder in `resources/views/pages/apartments.blade.php`).
@@ -39,5 +46,5 @@ Check `.env`: `APP_DEBUG=false`, HTTPS with `SESSION_SECURE_COOKIE=true`.
   asked Dennis to confirm (2026-11-19)
 - [ ] Client: floor plans still missing for 30-001, 30-002 (Teichhaus UG), 40-002 (Bachhaus EG Studio) → add PDF + map in `config/apartments.php`
 - [ ] Create admin logins for the client (`user:create`, passwords via `genpass`)
-- [ ] Staging deploy: code ready (tests green, build current); confirm server PHP 8.3+ first
+- [x] Staging deploy (2026-11-19), admin routes disabled (commit c9adf33) – re-enable before go-live
 - [ ] Later: Tailwind 4 and Fancybox 6 (both major rewrites, kept on v3 / v5 for now)

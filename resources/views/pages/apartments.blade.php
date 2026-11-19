@@ -113,8 +113,8 @@
                 <th class="py-8 pr-10">Etage</th>
                 <th class="py-8 pr-10">Zi.</th>
                 <th class="py-8 pr-10 text-right">m²</th>
-                <th class="py-8 pr-10 text-right">Mietzins<br>exkl. NK*</th>
-                <th class="py-8 pr-10 text-right">Wohn&shy;anteil*</th>
+                <th class="py-8 pr-10 text-right whitespace-nowrap">Mietzins/Mt.*</th>
+                <th class="py-8 pr-10 text-right whitespace-nowrap">Wohnanteil*</th>
                 <th class="py-8 pl-20 xl:pl-30 pr-10">Status</th>
                 <th class="py-8 pr-10 text-center">Plan</th>
                 <th class="py-8"><span class="sr-only">Bewerbung</span></th>
@@ -174,7 +174,7 @@
             @endforeach
           </table>
         </div>
-        <p class="mt-15 lg:mt-20 text-sm">*Diese Angaben sind provisorisch und stellen einen Richtwert dar. Die definitive Festlegung des Mietzinses und des Wohnanteils erfolgt, wenn die Baukosten bekannt sind. Alle Preise in CHF.</p>
+        <p class="mt-15 lg:mt-20 text-sm">*Mietzins pro Monat exkl. Nebenkosten. Diese Angaben sind provisorisch und stellen einen Richtwert dar. Die definitive Festlegung des Mietzinses und des Wohnanteils erfolgt, wenn die Baukosten bekannt sind. Alle Preise in CHF.</p>
       </div>
 
     </div>

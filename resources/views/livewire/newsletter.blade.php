@@ -5,7 +5,6 @@
 
   <x-layout.grid class="sm:gap-y-15 lg:gap-x-25 lg:gap-y-20">
     <x-honeypot />
-    <input type="hidden" wire:model="request_type" value="newsletter" />
 
     <x-layout.span class="relative sm:col-span-full">
       <p class="font-barlow-bold font-bold text-charcoal mb-8">Ich interessiere mich für*</p>

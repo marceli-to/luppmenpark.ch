@@ -112,7 +112,7 @@
 
 <x-layout.section>
   <x-layout.inner>
-    <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-0 -right-50" />
+    <x-icons.leafes.dark-green class="hidden lg:block w-28 h-27 absolute top-0 -right-30 xl:-right-50" />
     <div>
       <h2>Interessiert?</h2>
       <x-layout.article>

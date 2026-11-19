@@ -44,6 +44,7 @@
               <a
                 href="#haus-{{ $key }}"
                 tabindex="-1"
+                class="outline-none focus:outline-none"
                 x-on:click.prevent="[...document.querySelectorAll('[data-house={{ $key }}]')].find(el => el.offsetParent)?.scrollIntoView({ behavior: 'smooth' })">
                 <polygon
                   points="{{ $house['polygon'] }}"
@@ -78,7 +79,7 @@
                       @else
                         Preis auf Anfrage
                       @endif
-                      · <span class="inline-block w-8 h-8 mr-2 rounded-full {{ $dots[$apartment->status] ?? '' }}"></span>{{ $apartment->statusLabel() }}
+                      · <span class="inline-block w-6 h-6 mr-3 align-middle -mt-2 rounded-full {{ $dots[$apartment->status] ?? '' }}"></span>{{ $apartment->statusLabel() }}
                       @if ($plan = $apartment->planUrl())
                         · <a href="{{ $plan }}" target="_blank" class="underline">Plan</a>
                       @endif
@@ -102,6 +103,10 @@
         {{-- From md: table --}}
         <div class="hidden md:block">
           <table class="w-full text-sm xl:text-base text-left border-collapse" x-on:mouseleave="house = null">
+            <colgroup>
+              <col class="w-[11%]"><col class="w-[9%]"><col class="w-[6%]"><col class="w-[8%]">
+              <col class="w-[13%]"><col class="w-[13%]"><col class="w-[15%]"><col class="w-[7%]"><col>
+            </colgroup>
             <thead>
               <tr class="border-b-2 border-sandstone font-barlow-bold font-bold align-bottom">
                 <th class="py-8 pr-10">Nr.</th>
@@ -110,7 +115,7 @@
                 <th class="py-8 pr-10 text-right">m²</th>
                 <th class="py-8 pr-10 text-right">Mietzins<br>exkl. NK*</th>
                 <th class="py-8 pr-10 text-right">Wohn&shy;anteil*</th>
-                <th class="py-8 pr-10">Status</th>
+                <th class="py-8 pl-20 xl:pl-30 pr-10">Status</th>
                 <th class="py-8 pr-10 text-center">Plan</th>
                 <th class="py-8"><span class="sr-only">Bewerbung</span></th>
               </tr>
@@ -119,16 +124,16 @@
               <tbody
                 id="haus-{{ $key }}"
                 data-house="{{ $key }}"
-                class="scroll-mt-100 transition-colors"
-                :class="house === '{{ $key }}' && 'bg-ivory'"
-                x-on:mouseenter="house = '{{ $key }}'">
-                <tr>
+                class="scroll-mt-100">
+                <tr x-on:mouseenter="house = null">
                   <th colspan="9" class="pt-20 pb-6 font-barlow-bold font-bold uppercase text-sandstone border-b border-sandstone">
                     {{ $house['label'] }}
                   </th>
                 </tr>
                 @foreach ($house['apartments'] as $apartment)
-                  <tr class="border-b border-sandstone/40 {{ $apartment->status === 'rented' ? 'text-charcoal/50' : '' }}">
+                  <tr
+                    x-on:mouseenter="house = '{{ $key }}'"
+                    class="border-b border-sandstone/40 hover:bg-ivory transition-colors {{ $apartment->status === 'rented' ? 'text-charcoal/50' : '' }}">
                     <td class="py-8 pr-10 whitespace-nowrap">{{ $apartment->number }}</td>
                     <td class="py-8 pr-10 whitespace-nowrap">{{ $apartment->floor }}</td>
                     <td class="py-8 pr-10">{{ $apartment->rooms }}</td>
@@ -139,8 +144,8 @@
                     @else
                       <td colspan="2" class="py-8 pr-10 text-right">auf Anfrage</td>
                     @endif
-                    <td class="py-8 pr-10 whitespace-nowrap">
-                      <span class="inline-block w-9 h-9 mr-5 rounded-full {{ $dots[$apartment->status] ?? '' }}"></span>{{ $apartment->statusLabel() }}
+                    <td class="py-8 pl-20 xl:pl-30 pr-10 whitespace-nowrap">
+                      <span class="inline-block w-7 h-7 mr-5 align-middle -mt-2 rounded-full {{ $dots[$apartment->status] ?? '' }}"></span>{{ $apartment->statusLabel() }}
                     </td>
                     <td class="py-8 pr-10 text-center">
                       @if ($plan = $apartment->planUrl())

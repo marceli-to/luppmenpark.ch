@@ -1,9 +1,9 @@
 {{--
-  Standalone layout for the apartment admin: same fonts and colours as the site,
-  without its navigation and scripts.
+  Standalone layout for the apartment admin: the site's ivory header, logo,
+  colours and sandstone footer, without its navigation and scripts.
 --}}
 <!DOCTYPE html>
-<html lang="de" class="overflow-y-scroll">
+<html lang="de" class="h-full bg-white overflow-y-scroll">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,36 +12,54 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   @vite(['resources/css/app.css'])
 </head>
-<body class="antialiased bg-white font-barlow-medium font-medium text-charcoal text-base leading-[1.45]">
+<body class="antialiased flex min-h-full flex-col font-barlow-medium font-medium text-charcoal text-base leading-[1.45]">
 
-  <div class="mx-auto w-full max-w-6xl px-20 py-30 md:px-30 md:py-40">
-
-    <header class="mb-30 flex flex-wrap items-center justify-between gap-x-20 gap-y-10 border-b border-charcoal pb-15">
-      <div>
-        <a href="{{ route('admin.apartments.index') }}" class="text-lg font-barlow-bold font-bold uppercase leading-none">Luppmenpark Verwaltung</a>
-        @hasSection('subtitle')
-          <p class="!mb-0 text-sm opacity-70">@yield('subtitle')</p>
-        @endif
-      </div>
+  @hasSection('bare')
+  <main class="flex flex-1 items-center justify-center px-20 py-30">
+    @yield('content')
+  </main>
+  @else
+  <header class="bg-ivory">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-30 gap-y-15 px-20 py-20 md:px-30">
+      <a href="{{ route('admin.apartments.index') }}" class="flex items-center gap-x-15 md:gap-x-20" title="Luppmenpark Verwaltung">
+        <x-icons.logo class="block h-auto w-120 md:w-150" />
+        <span class="border-l border-sandstone pl-15 font-barlow-bold text-sm font-bold uppercase text-sandstone md:pl-20">Verwaltung</span>
+      </a>
 
       @auth
-        <div class="flex items-center gap-x-15 text-sm">
-          <span class="opacity-70">{{ auth()->user()->name }}</span>
+        <div class="flex items-center gap-x-20 text-sm">
+          <span class="max-sm:hidden">{{ auth()->user()->name }}</span>
           <form method="POST" action="{{ route('admin.logout') }}">
             @csrf
-            <button type="submit" class="underline hover:no-underline">Abmelden</button>
+            <button type="submit" class="underline decoration-1 underline-offset-4 hover:text-sandstone">Abmelden</button>
           </form>
         </div>
       @endauth
-    </header>
+    </div>
+  </header>
 
-    @if (session('status'))
-      <p class="!mb-25 bg-ivory px-15 py-10 text-sm">{{ session('status') }}</p>
-    @endif
+  <main class="isolate flex-1">
+    <div class="mx-auto max-w-6xl px-20 py-30 md:px-30 md:py-40">
 
-    @yield('content')
+      @if (session('status'))
+        <div class="!mb-25 flex items-center gap-x-10 rounded-sm bg-ivory px-15 py-12 text-sm" role="status">
+          <span class="size-8 shrink-0 rounded-full bg-emerald"></span>
+          <p>{{ session('status') }}</p>
+        </div>
+      @endif
 
-  </div>
+      @yield('content')
+
+    </div>
+  </main>
+
+  <footer class="bg-sandstone text-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-20 gap-y-5 px-20 py-15 text-sm md:px-30">
+      <p><strong>Genossenschaft Alterswohnen</strong> Luppmenpark GAL</p>
+      <a href="{{ route('page.apartments') }}" target="_blank" class="hover:underline hover:decoration-1 hover:underline-offset-4">Zur Website</a>
+    </div>
+  </footer>
+  @endif
 
 </body>
 </html>

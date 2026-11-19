@@ -23,7 +23,7 @@ class LoginController extends Controller
       'email' => 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
     ]);
 
-    if (! Auth::attempt($credentials, $request->boolean('remember'))) {
+    if (! Auth::attempt($credentials)) {
       throw ValidationException::withMessages([
         'email' => 'Diese Zugangsdaten sind uns nicht bekannt.',
       ]);

@@ -34,8 +34,10 @@ Check `.env`: `APP_DEBUG=false`, HTTPS with `SESSION_SECURE_COOKIE=true`.
 
 ## Next
 
-- [ ] Client: intro text for Wohnungen (placeholder in `resources/views/pages/apartments.blade.php`)
+- [ ] Client: intro text for Wohnungen (placeholder in `resources/views/pages/apartments.blade.php`).
+  Placeholder says "39 Wohneinheiten", Mieterspiegel has 41 (38 Whg., 2 Studios, 1 Atelier) –
+  asked Dennis to confirm (2026-11-19)
 - [ ] Client: floor plans still missing for 30-001, 30-002 (Teichhaus UG), 40-002 (Bachhaus EG Studio) → add PDF + map in `config/apartments.php`
 - [ ] Create admin logins for the client (`user:create`, passwords via `genpass`)
-- [ ] Confirm server PHP version (8.3+) before deploying
+- [ ] Staging deploy: code ready (tests green, build current); confirm server PHP 8.3+ first
 - [ ] Later: Tailwind 4 and Fancybox 6 (both major rewrites, kept on v3 / v5 for now)

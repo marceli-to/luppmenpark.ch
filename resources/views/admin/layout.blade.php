@@ -21,14 +21,12 @@
   @else
   <header class="bg-ivory">
     <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-30 gap-y-15 px-20 py-20 md:px-30">
-      <a href="{{ route('admin.apartments.index') }}" class="flex items-center gap-x-15 md:gap-x-20" title="Luppmenpark Verwaltung">
+      <a href="{{ route('admin.apartments.index') }}" class="block" title="Luppmenpark Verwaltung">
         <x-icons.logo class="block h-auto w-120 md:w-150" />
-        <span class="border-l border-sandstone pl-15 font-barlow-bold text-sm font-bold uppercase text-sandstone md:pl-20">Verwaltung</span>
       </a>
 
       @auth
-        <div class="flex items-center gap-x-20 text-sm">
-          <span class="max-sm:hidden">{{ auth()->user()->name }}</span>
+        <div class="text-sm">
           <form method="POST" action="{{ route('admin.logout') }}">
             @csrf
             <button type="submit" class="underline decoration-1 underline-offset-4 hover:text-sandstone">Abmelden</button>

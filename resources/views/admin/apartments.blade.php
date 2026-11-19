@@ -6,27 +6,16 @@
   $dots = ['free' => 'bg-emerald', 'reserved' => 'bg-sandstone', 'rented' => 'bg-charcoal/40'];
   // The dot follows the select without JS: the row checks which option is chosen.
   $liveDot = 'group-has-[option[value=free]:checked]/row:bg-emerald group-has-[option[value=reserved]:checked]/row:bg-sandstone group-has-[option[value=rented]:checked]/row:bg-charcoal/40';
-  $counts = $apartments->flatten(1)->countBy('status');
   $field = 'rounded-sm bg-ivory ring-1 ring-transparent focus-within:ring-2 focus-within:ring-sandstone';
 @endphp
 
 <h1 class="text-sandstone">Wohnungen</h1>
 
-<div class="mb-25 flex flex-wrap items-end justify-between gap-x-30 gap-y-15 lg:mb-30">
+<div class="mb-25 lg:mb-30">
   <p class="max-w-prose">
     Mietzins, Wohnanteil und Status je Wohnung. Nach dem Speichern erscheinen die Änderungen sofort auf der Seite
     <a href="{{ route('page.apartments') }}" target="_blank" class="underline decoration-1 underline-offset-4 hover:text-sandstone">Wohnungen</a>.
   </p>
-  @unless ($apartments->isEmpty())
-    <div class="flex flex-wrap gap-x-20 gap-y-5 text-sm tabular-nums">
-      @foreach ($states as $value => $label)
-        <div class="flex items-center gap-x-6">
-          <span class="size-8 rounded-full {{ $dots[$value] ?? '' }}"></span>
-          <strong>{{ $counts[$value] ?? 0 }}</strong> {{ $label }}
-        </div>
-      @endforeach
-    </div>
-  @endunless
 </div>
 
 @if ($apartments->isEmpty())
@@ -142,11 +131,10 @@
       </div>
     </div>
 
-    <div class="sticky bottom-0 z-10 -mx-20 mt-30 flex flex-wrap items-center gap-x-20 gap-y-10 border-t-2 border-sandstone bg-white/95 px-20 py-15 backdrop-blur md:-mx-30 md:px-30">
+    <div class="sticky bottom-0 z-10 -mx-20 mt-30 flex flex-wrap items-center gap-x-20 gap-y-10 bg-white/95 px-20 py-15 backdrop-blur md:-mx-30 md:px-30">
       <button type="submit" class="rounded-sm bg-sandstone px-25 py-10 font-barlow-bold font-bold uppercase text-white transition-colors hover:bg-emerald">
         Speichern
       </button>
-      <p class="text-sm text-charcoal/70">Leerer Mietzins = «auf Anfrage». Alle Preise in CHF.</p>
     </div>
 
   </form>

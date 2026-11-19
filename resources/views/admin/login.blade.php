@@ -10,6 +10,8 @@
 
 <div class="w-full max-w-sm">
 
+  <x-icons.logo class="mx-auto mb-30 block h-auto w-150 md:w-180" />
+
   <div>
     <form method="POST" action="{{ route('login') }}" class="flex flex-col gap-y-15 rounded-sm bg-ivory p-20 md:p-25">
       @csrf

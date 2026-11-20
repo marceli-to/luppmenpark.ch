@@ -10,7 +10,8 @@
   lives in the footnote. Floor plans: one PDF per floor in `public/downloads/grundrisse/`, mapped to units in
   `config('apartments.plans')`; a `<Nr>.pdf` there overrides.
 - **Admin** (`/admin`): login, status frei / reserviert / vermietet, Mietzins, Wohnanteil.
-  `php artisan apartments:seed` (re-runnable, keeps status and prices), `php artisan user:create`.
+  `php artisan apartments:seed` (re-runnable, keeps status and prices), `php artisan user:create`,
+  `php artisan user:update <email> [--name=] [--email=] [--password]` (no options = asks for everything).
   Pared-down header (logo + Abmelden), logo on login, save message as green toast top right.
 - **Home**: "Jetzt bewerben" badge → Wohnungen, «Alle Wohnungen» button under Beispielgrundrisse,
   Interessenten form moved to Kontakt (dropdown "Wohnen", `/kontakt?formular=wohnen`).

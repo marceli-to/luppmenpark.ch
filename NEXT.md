@@ -47,8 +47,8 @@ Check `.env`: `APP_DEBUG=false`, HTTPS with `SESSION_SECURE_COOKIE=true`.
 - [ ] Client: floor plans still missing for 30-001, 30-002 (Teichhaus UG), 40-002 (Bachhaus EG Studio) → add PDF + map in `config/apartments.php`
 - [ ] Create admin logins for the client (`user:create`, passwords via `genpass`)
 - [x] Staging deploy (2026-11-19, https://staging.luppmenpark.ch), own DB `luppmenpark_webstage`,
-  admin routes disabled (commit c9adf33) – re-enable in `routes/web.php` before go-live
+  admin routes were disabled there (commit c9adf33); re-enabled locally 2026-11-20 – deploy to staging
 - [ ] Staging: set `MAIL_TO` to own address (still `info@luppmenpark.ch`), test contact forms
-- [ ] Go-live: re-enable admin, deploy to `/httpdocs` (run migrations + `apartments:seed` on live DB),
+- [ ] Go-live: deploy to `/httpdocs` (run migrations + `apartments:seed` on live DB),
   no `Disallow: /` robots.txt there
 - [ ] Later: Tailwind 4 and Fancybox 6 (both major rewrites, kept on v3 / v5 for now)

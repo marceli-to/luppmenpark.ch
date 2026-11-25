@@ -9,47 +9,6 @@
     <div>
       <h1 class="text-sandstone">FAQ – Finanzierungsmöglichkeiten</h1>
       <x-layout.article class="mb-15 sm:mb-20">
-        <h2 class="mb-5">Wie sieht der Zeitplan des Projektes aus?</h2>
-        <div>
-          <div class="mb-10 sm:mb-0">Die zeitlichen Meilensteine des Projektes:</div>
-          <div class="flex flex-col space-y-10">
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Ende 2024:</div>
-              <div class="sm:w-3/4">Baueingabe</div>
-            </div>
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Anfang 2025:</div>
-              <div class="sm:w-3/4">öffentliche Bauausschreibung</div>
-            </div>
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Sommer 2025:</div>
-              <div class="sm:w-3/4">Baubewilligung erhalten</div>
-            </div>
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Spätsommer 2025:</div>
-              <div class="sm:w-3/4">Finanzierung ist gesichert, die Hypothek wird von der Migros Bank zugesichert.</div>
-            </div>
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Herbst 2025:</div>
-              <div class="sm:w-3/4">Baubewilligung rechtskräftig</div>
-            </div>
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Frühjahr 2026:</div>
-              <div class="sm:w-3/4">Baufreigabe</div>
-            </div>
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Frühling 2027:</div>
-              <div class="sm:w-3/4">Baubeginn</div>
-            </div>
-            <div class="sm:flex">
-              <div class="sm:w-1/4">Frühling 2029:</div>
-              <div class="sm:w-3/4">Einzug</div>
-            </div>
-          </div>
-        </div>
-      </x-layout.article>
-
-      <x-layout.article class="mb-15 sm:mb-20">
         <h2 class="mb-5">Weshalb soll ich in das Projekt der GAL investieren?</h2>
         <div>Die Investition lohnt sich einerseits finanziell: Sie stellt eine sinnvolle Finanzanlage in ein regionales Immobilienprojekt mit attraktiver Verzinsung dar. Sie leisten damit andererseits auch einen wertvolle Beitrag zur Schaffung von neuem Wohnraum für ältere Mitmenschen in der Gemeinde Hittnau. Gemeinsam gelingt die Realisation eines für Hittnau bedeutenden Immobilienprojektes auf dem Areal des geschützten Luppmenparks.</div>
       </x-layout.article>

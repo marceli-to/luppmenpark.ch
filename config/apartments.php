@@ -94,7 +94,6 @@ return [
   /*
   | Floor plans: one PDF per floor (public/downloads/grundrisse/Luppmenpark_Grundriss_<key>.pdf)
   | and the units it shows. A unit-specific file <number>.pdf in the same folder wins.
-  | Missing so far: 30-001, 30-002 (Teichhaus UG), 40-002 (Bachhaus EG Studio).
   */
   'plans' => [
     'scheune-eg' => ['10-001'],
@@ -103,9 +102,10 @@ return [
     'gaertnerhaus-eg' => ['20-001', '20-002'],
     'gaertnerhaus-1-2og' => ['20-101', '20-102', '20-201', '20-202'],
     'gaertnerhaus-3og' => ['20-301', '20-302'],
+    'teichhaus-ug' => ['30-001', '30-002'],
     'teichhaus-eg' => ['30-101', '30-102'],
     'teichhaus-1-3og' => ['30-201', '30-202', '30-203', '30-301', '30-302', '30-303', '30-401', '30-402', '30-403'],
-    'bachhaus-eg' => ['40-001'],
+    'bachhaus-eg' => ['40-001', '40-002'],
     'bachhaus-1-3og' => ['40-101', '40-102', '40-103', '40-201', '40-202', '40-203', '40-301', '40-302', '40-303'],
     'bachhaus-4og' => ['40-401'],
   ],

@@ -6,7 +6,7 @@
   :image="'luppmenpark-obstbaum'" 
   :alt="''"
   :sizes="['md', 'lg', 'xl']"
-  class="md:aspect-[16/9] xl:aspect-[16/7]" />
+  class="md:aspect-[16/7] xl:aspect-[16/5]" />
 <x-layout.section>
   <x-layout.inner>
     <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />

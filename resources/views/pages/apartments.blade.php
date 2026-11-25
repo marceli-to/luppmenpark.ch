@@ -9,14 +9,38 @@
   <x-layout.inner>
     <x-icons.leafes.orange class="hidden lg:block w-32 h-23 absolute top-20 right-0" />
     <h1 class="text-sandstone">Wohnungen</h1>
-    <x-layout.article>
-      {{-- Placeholder: the client's intro text is still to come. --}}
-      <p>In vier Häusern mit individuellem Charakter entstehen im Luppmenpark 39 Wohneinheiten: 2.5-, 3.5- und eine 4.5-Zimmer-Wohnung, zwei Studios sowie ein Atelier. Fahren Sie über die Liste, um das jeweilige Haus im Übersichtsplan zu sehen.</p>
-    </x-layout.article>
+    <div class="lg:grid lg:grid-cols-12 lg:gap-x-30 xl:gap-x-40">
+      <div class="lg:col-span-7">
+        <x-layout.article class="lg:max-w-none">
+          <h2>Bleiben, wo man zu Hause ist.</h2>
+          <p>Der Luppmenpark ist mehr als ein Ort zum Wohnen. Er soll ein Zuhause sein, in dem Menschen auch im Alter selbstständig leben, sich wohlfühlen und Teil einer lebendigen Gemeinschaft bleiben können. Die gemeinnützige Genossenschaft Alterswohnen Luppmenpark schafft dafür hindernisarmen, langfristig preisgünstigen Wohnraum. Menschen mit Wurzeln in Hittnau sollen hier einen neuen Lebensabschnitt beginnen können, ohne ihre vertraute Umgebung hinter sich zu lassen. Eingebettet in den historischen Park entsteht eine überschaubare Nachbarschaft mit viel Grün, Raum für Begegnungen und ebenso viel Platz für persönliche Freiheit.</p>
+        </x-layout.article>
+        <div class="mt-20 lg:mt-30 max-w-prose lg:max-w-none space-y-20 lg:space-y-30 hyphens-auto">
+          <div>
+            <h2>Selbstständig leben</h2>
+            <p>Das eigene Leben gestalten, den gewohnten Alltag bewahren und sich in den eigenen vier Wänden rundum wohlfühlen. Die hindernisarmen Wohnungen im Luppmenpark bieten dafür die passenden Voraussetzungen. Hier können die Bewohnerinnen und Bewohner ihren Alltag nach eigenen Vorstellungen gestalten und auch im Alter möglichst lange selbstständig leben.</p>
+          </div>
+          <div>
+            <h2>Gemeinschaft erleben</h2>
+            <p>Ein spontaner Schwatz im Lindenhof, ein Kaffee mit den Nachbarn oder gemeinsame Aktivitäten im Gemeinschaftsraum. Im Luppmenpark ergeben sich Begegnungen ganz selbstverständlich. Wer Gesellschaft sucht, findet sie gleich vor der Haustür. Wer lieber für sich ist, geniesst seinen persönlichen Freiraum. Denn eine gute Nachbarschaft lebt von Offenheit, gegenseitiger Rücksichtnahme und dem Gefühl, dazuzugehören.</p>
+          </div>
+          <div>
+            <h2>Im Grünen zu Hause</h2>
+            <p>Alte Bäume, lauschige Plätze und ein Park mit Geschichte: Der Luppmenpark bietet eine besondere Umgebung zum Wohnen und Leben. Die Wege laden zu kleinen Spaziergängen ein, der Lindenhof mit seinem Brunnen und den Sitzbänken zum Verweilen. Hier lässt sich der Wechsel der Jahreszeiten unmittelbar erleben, mitten in Hittnau und doch ein wenig abseits vom Alltag.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="mt-30 lg:mt-0 max-w-prose bg-ivory rounded-sm p-20 lg:p-30 hyphens-auto lg:sticky lg:top-30">
+          <p>Wer sich um eine Wohnung bewerben möchte, muss Mitglied der Genossenschaft sein. Das neue Vergabereglement legt danach fest, nach welchen Kriterien die GAL die Wohnungen zuteilt. Dabei spielen beispielsweise die Dauer des Wohnsitzes in Hittnau und die Dauer der Genossenschaftsmitgliedschaft eine Rolle. Für eine verbindliche Reservation ist zudem ein Darlehen von mindestens CHF 10’000 erforderlich.</p>
+          <p>In einer ersten Etappe vergibt die GAL maximal die Hälfte der insgesamt 39 Wohneinheiten. Die weiteren Wohnungen folgen rund ein Jahr vor dem Bezug, der für Frühling 2029 vorgesehen ist.</p>
+        </div>
+      </div>
+    </div>
   </x-layout.inner>
 </x-layout.section>
 
-<x-layout.section class="!pt-0">
+<x-layout.section class="!pt-20 md:!pt-40 lg:!pt-80">
   <x-layout.inner class="2xl:!max-w-7xl">
     <div
       x-data="{ house: null }"

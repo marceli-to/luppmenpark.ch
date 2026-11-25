@@ -30,6 +30,11 @@
         <h2>Das Immobilienprojekt</h2>
         <p>Die beschauliche Wohnsiedlung ist eingebettet im wunderbaren, denkmalgeschützten Luppmenpark. Herzstück der Überbauung im Stil eines Weilers bildet der Lindenhof mit seinem einfachen Dorfbrunnen, Bänkchen zum Verweilen und hübschen Blumenbeeten. Der Hof ist barrierefrei zugänglich und Ort der Begegnung und der Gemeinschaft. Hierhin öffnet sich auch der Gemeinschaftsraum mit seinem gedeckten Aussensitzplatz und die Hauszugänge. Darüber hinaus lädt der ganze Park mit seinen alten, schattenspendenden Bäumen zu kleinen Spaziergängen in unmittelbarer Umgebung der Überbauung ein.</p>
         <p>In vier Häusern mit individuellem Charakter werden insgesamt 39 Wohneinheiten realisiert. 17 davon sind 3.5-Zimmer-Wohnungen und 19 sind 2.5-Zimmer-Wohnungen. Ergänzt wird das Angebot durch eine 4.5-Zimmer-Wohnungen sowie zwei Studios. Darüber hinaus werden ein Atelier sowie Räumlichkeiten für die Spitex realisiert, die sich in der Überbauung permanent eingliedern wird. Zu allen Wohneinheiten gehören Kellerabteile und Einstellplätze für Velos. Parkplätze können in der Tiefgarage der Überbauung zugemietet werden.</p>
+        <a
+          href="{{ route('page.apartments') }}"
+          class="inline-flex mt-20 lg:mt-30 bg-sandstone hover:bg-emerald text-ivory hover:text-white transition-all rounded-sm font-barlow-bold font-bold text-md md:text-lg uppercase py-5 px-15">
+          Alle Wohnungen
+        </a>
         <div class="my-20 lg:my-40">
           <a href="/media/img/luppmenpark-situation-lg.jpg" title="Luppmenpark Situation" data-fancybox="galerie">
             <x-media.picture
@@ -81,35 +86,41 @@
 <x-layout.section class="bg-ivory">
   <x-layout.inner>
     <div class="max-w-3xl">
-      <h1 class="text-charcoal">Beispielgrundrisse</h1>
-      <p>Pro Gebäude ist ein exemplarischer Grundriss dargestellt, der einen ersten Eindruck der Wohnungsaufteilung vermittelt. Die detaillierten Grundrisse finden Sie unter <a href="{{ route('page.apartments') }}" class="underline hover:no-underline">Wohnungen</a>.</p>
-      <ul class="flex flex-col space-y-10 mt-15 lg:mt-20">
-        <li>
-          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Teichhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
-            Grundriss Muster Teichhaus (PDF)
-          </a>
-        </li>
-        <li>
-          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Gaertnerhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
-            Grundriss Muster Gärtnerhaus (PDF)
-          </a>  
-        </li>
-        <li>
-          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Bachhaus.pdf') }}" target="_blank" class="underline hover:no-underline">
-            Grundriss Muster Bachhaus (PDF)
-          </a>
-        </li>
-        <li>
-          <a href="{{ asset('downloads/Luppmenpark_Vermietungsplan_Scheune.pdf') }}" target="_blank" class="underline hover:no-underline">
-            Grundriss Muster Scheune (PDF)
-          </a>
-        </li>
-      </ul>
-      <a
-        href="{{ route('page.apartments') }}"
-        class="inline-flex mt-20 lg:mt-30 bg-sandstone hover:bg-emerald text-ivory hover:text-white transition-all rounded-sm font-barlow-bold font-bold text-md md:text-lg uppercase py-5 px-15">
-        Alle Wohnungen
-      </a>
+      <h1 class="text-charcoal">Meilensteine</h1>
+      <div class="flex flex-col space-y-10">
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Ende 2024:</div>
+          <div class="sm:w-3/4">Baueingabe</div>
+        </div>
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Anfang 2025:</div>
+          <div class="sm:w-3/4">öffentliche Bauausschreibung</div>
+        </div>
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Sommer 2025:</div>
+          <div class="sm:w-3/4">Baubewilligung erhalten</div>
+        </div>
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Spätsommer 2025:</div>
+          <div class="sm:w-3/4">Finanzierung ist gesichert, die Hypothek wird von der Migros Bank zugesichert.</div>
+        </div>
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Herbst 2025:</div>
+          <div class="sm:w-3/4">Baubewilligung rechtskräftig</div>
+        </div>
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Frühjahr 2026:</div>
+          <div class="sm:w-3/4">Baufreigabe</div>
+        </div>
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Frühling 2027:</div>
+          <div class="sm:w-3/4">Baubeginn</div>
+        </div>
+        <div class="sm:flex">
+          <div class="sm:w-1/4">Frühling 2029:</div>
+          <div class="sm:w-3/4">Einzug</div>
+        </div>
+      </div>
     </div>
   </x-layout.inner>
 </x-layout.section>

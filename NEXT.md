@@ -1,5 +1,17 @@
 # Luppmenpark – progress
 
+## Done (2026-11-25) – client corrections (Dennis, mail 25.11.)
+
+- **Wohnungen**: client intro text (lead + 3 sections) left, beige info box (Vergabe, Darlehen,
+  1. Etappe) right and sticky on lg; more space above the table.
+- **Floor plans**: new Bachhaus EG (also covers studio 40-002), Teichhaus UG (30-001, 30-002) –
+  all units now have a plan. New fillable Bewerbungsformular (same file name).
+- **Media**: "Medienmitteilungen" (Nov. 2026 – Baubeginn), Hittnau INTERN 204, newest first.
+- **Home**: Meilensteine moved from FAQ and replace Beispielgrundrisse (sample PDFs deleted);
+  «Alle Wohnungen» under «Das Immobilienprojekt».
+- **Genossenschaft / Investition**: hero image same height as home.
+- Unit count: client text says 39 Wohneinheiten → kept 39 everywhere.
+
 ## Done (2026-11-19)
 
 - **Wohnungen** (`/wohnungen`, nav after Projekt): overview plan (`public/media/img/isometrie`,
@@ -42,11 +54,9 @@ Check `.env`: `APP_DEBUG=false`, HTTPS with `SESSION_SECURE_COOKIE=true`.
 
 ## Next
 
-- [ ] Client: intro text for Wohnungen (placeholder in `resources/views/pages/apartments.blade.php`).
-  Placeholder says "39 Wohneinheiten", Mieterspiegel has 41 (38 Whg., 2 Studios, 1 Atelier) –
-  asked Dennis to confirm (2026-11-19)
-- [ ] Client: floor plans still missing for 30-001, 30-002 (Teichhaus UG), 40-002 (Bachhaus EG Studio) → add PDF + map in `config/apartments.php`
-- [ ] Create admin logins for the client (`user:create`, passwords via `genpass`)
+- [ ] Deploy 25.11. corrections to staging, check home leaf icons (fixed `top-[…px]`) after layout change
+- [ ] Create shared admin login `info@luppmenpark.ch` on the server (`user:create`, password via `genpass`)
+- [ ] Maybe: Meilensteine – Baubeginn "März 2027" (press release) / add "Vergabe 1. Etappe" – ask Dennis
 - [x] Staging deploy (2026-11-19, https://staging.luppmenpark.ch), own DB `luppmenpark_webstage`,
   admin routes were disabled there (commit c9adf33); re-enabled locally 2026-11-20 – deploy to staging
 - [ ] Staging: set `MAIL_TO` to own address (still `info@luppmenpark.ch`), test contact forms
